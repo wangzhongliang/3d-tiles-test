@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>wzl</author>
+      <authoring_tool>CityEngine 2015.1.2047 0605R</authoring_tool>
+    </contributor>
+    <created>2016-09-23T17:04:33</created>
+    <modified>2016-09-23T17:04:33</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="VisualMaterial" name="CityEngineMaterial">
+      <instance_effect url="#Effect"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Geometry0" name="mesh_CityEngineMaterial">
+      <mesh>
+        <source id="GeometrySource0" name="mesh_CityEngineMaterial_positions">
+          <float_array id="GeometrySource0-array" count="144">-19.27058160863817 0 29.35795062640682 -18.29096735082567 0 35.46404117206112 -15.12949503026903 0 36.25511783221737 -15.8196500595659 0 38.55416339496151 -16.71021402440965 0 41.57013553241268 36.91238653101027 0 49.78987353900448 38.24822866357863 0 43.73321765521541 41.79931508935988 0 44.3265251503326 43.76968633569777 0 38.81374209979549 45.92925512231887 0 31.91657870868221 47.30962621606887 0 24.42610782245174 48.48962652124465 0 17.54130023578182 48.48962652124465 0 12.01614421466365 45.13888036645949 0 11.81837695697323 46.33001195825637 0 6.503351627383382 46.47473394311965 0 3.227806507144123 39.46160756982863 0 2.214241443667561 -3.708112126216292 0 -11.22166210552678 -4.698834782466293 0 -5.708863796200604 -6.858445530757308 0 -6.499936641659588 -10.99952066503465 0 -1.765843929257244 -14.94022882543504 0 5.329096256289632 -17.70097101293504 0 13.20275348285213 -19.07019556127488 0 20.297693668399 -19.27058160863817 108.5 29.35795062640682 -18.29096735082567 108.5 35.46404117206112 -15.12949503026903 108.5 36.25511783221737 -15.8196500595659 108.5 38.55416339496151 -16.71021402440965 108.5 41.57013553241268 36.91238653101027 108.5 49.78987353900448 38.24822866357863 108.5 43.73321765521541 41.79931508935988 108.5 44.3265251503326 43.76968633569777 108.5 38.81374209979549 45.92925512231887 108.5 31.91657870868221 47.30962621606887 108.5 24.42610782245174 48.48962652124465 108.5 17.54130023578182 48.48962652124465 108.5 12.01614421466365 45.13888036645949 108.5 11.81837695697323 46.33001195825637 108.5 6.503351627383382 46.47473394311965 108.5 3.227806507144123 39.46160756982863 108.5 2.214241443667561 -3.708112126216292 108.5 -11.22166210552678 -4.698834782466293 108.5 -5.708863796200604 -6.858445530757308 108.5 -6.499936641659588 -10.99952066503465 108.5 -1.765843929257244 -14.94022882543504 108.5 5.329096256289632 -17.70097101293504 108.5 13.20275348285213 -19.07019556127488 108.5 20.297693668399 </float_array>
+          <technique_common>
+            <accessor source="#GeometrySource0-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry0-vertices">
+          <input semantic="POSITION" source="#GeometrySource0"/>
+        </vertices>
+        <polylist material="Material" count="26">
+          <input semantic="VERTEX" source="#Geometry0-vertices" offset="0"/>
+          <vcount>24 24 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>1 0 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 0 1 25 24 1 2 26 25 2 3 27 26 3 4 28 27 4 5 29 28 5 6 30 29 6 7 31 30 7 8 32 31 8 9 33 32 9 10 34 33 10 11 35 34 11 12 36 35 12 13 37 36 13 14 38 37 14 15 39 38 15 16 40 39 16 17 41 40 17 18 42 41 18 19 43 42 19 20 44 43 20 21 45 44 21 22 46 45 22 23 47 46 23 0 24 47</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="scene_gridID_40_Sabadell Financial Center_0">
+      <node name="CityEngineMaterial" type="NODE">
+        <scale>1 1 1</scale>
+        <instance_geometry url="#Geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra type="parameters">
+        <technique profile="cga">
+          <placeholder/>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

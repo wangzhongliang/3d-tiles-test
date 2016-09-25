@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>wzl</author>
+      <authoring_tool>CityEngine 2015.1.2047 0605R</authoring_tool>
+    </contributor>
+    <created>2016-09-23T17:28:26</created>
+    <modified>2016-09-23T17:28:26</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="VisualMaterial" name="CityEngineMaterial">
+      <instance_effect url="#Effect"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Geometry0" name="mesh_CityEngineMaterial">
+      <mesh>
+        <source id="GeometrySource0" name="mesh_CityEngineMaterial_positions">
+          <float_array id="GeometrySource0-array" count="192">-11.23906299099326 0 -93.41261822124943 -11.27244922146201 0 -95.1801658286713 -19.29856845363974 0 -95.00711590191349 -19.25404330715537 0 -92.47322613140568 -28.08168002590537 0 -92.28781849285587 -28.13734408840537 0 -95.25432354351505 -36.05216762050987 0 -95.08127552410587 -35.99650355800987 0 -92.37433582684025 -43.87791415676475 0 -92.21364742657169 -43.93357821926475 0 -94.83406597515568 -52.19349643215537 0 -94.66103321453556 -52.14896747097373 0 -92.37433582684025 -55.88929721340537 0 -92.3001781119965 -55.68891879543662 0 -82.21404510876163 -51.73707553371787 0 -82.30056244274601 -51.60350009426475 0 -76.16978031536564 -48.49769565090537 0 -76.23157841106876 -48.39751025661826 0 -71.10198742290958 -37.25441142544151 0 -71.33683353802189 -37.34345981106162 0 -75.58883434673771 -40.04853793606162 0 -75.52703434368595 -40.148727145046 0 -80.80494171520695 -29.42866679653525 0 -81.02742916485294 -29.33958789333701 0 -76.16978031536564 -31.57713481411338 0 -76.12032658001407 -31.47694751247763 0 -71.23795658489689 -10.13698169216514 0 -71.67057377239689 -10.23717090114951 0 -76.21921879192814 -12.32997485622764 0 -76.18213802715763 -12.41905566677451 0 -80.71842247387394 -5.817802157253027 0 -80.85439163586124 -6.073840823024512 0 -93.52385288616642 -11.23906299099326 19 -93.41261822124943 -11.27244922146201 19 -95.1801658286713 -19.29856845363974 19 -95.00711590191349 -19.25404330715537 19 -92.47322613140568 -28.08168002590537 19 -92.28781849285587 -28.13734408840537 19 -95.25432354351505 -36.05216762050987 19 -95.08127552410587 -35.99650355800987 19 -92.37433582684025 -43.87791415676475 19 -92.21364742657169 -43.93357821926475 19 -94.83406597515568 -52.19349643215537 19 -94.66103321453556 -52.14896747097373 19 -92.37433582684025 -55.88929721340537 19 -92.3001781119965 -55.68891879543662 19 -82.21404510876163 -51.73707553371787 19 -82.30056244274601 -51.60350009426475 19 -76.16978031536564 -48.49769565090537 19 -76.23157841106876 -48.39751025661826 19 -71.10198742290958 -37.25441142544151 19 -71.33683353802189 -37.34345981106162 19 -75.58883434673771 -40.04853793606162 19 -75.52703434368595 -40.148727145046 19 -80.80494171520695 -29.42866679653525 19 -81.02742916485294 -29.33958789333701 19 -76.16978031536564 -31.57713481411338 19 -76.12032658001407 -31.47694751247763 19 -71.23795658489689 -10.13698169216514 19 -71.67057377239689 -10.23717090114951 19 -76.21921879192814 -12.32997485622764 19 -76.18213802715763 -12.41905566677451 19 -80.71842247387394 -5.817802157253027 19 -80.85439163586124 -6.073840823024512 19 -93.52385288616642 </float_array>
+          <technique_common>
+            <accessor source="#GeometrySource0-array" count="64" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry0-vertices">
+          <input semantic="POSITION" source="#GeometrySource0"/>
+        </vertices>
+        <polylist material="Material" count="34">
+          <input semantic="VERTEX" source="#Geometry0-vertices" offset="0"/>
+          <vcount>32 32 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>1 0 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 0 1 33 32 1 2 34 33 2 3 35 34 3 4 36 35 4 5 37 36 5 6 38 37 6 7 39 38 7 8 40 39 8 9 41 40 9 10 42 41 10 11 43 42 11 12 44 43 12 13 45 44 13 14 46 45 14 15 47 46 15 16 48 47 16 17 49 48 17 18 50 49 18 19 51 50 19 20 52 51 20 21 53 52 21 22 54 53 22 23 55 54 23 24 56 55 24 25 57 56 25 26 58 57 26 27 59 58 27 28 60 59 28 29 61 60 29 30 62 61 30 31 63 62 31 0 32 63</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="scene_gridID_25_253_0">
+      <node name="CityEngineMaterial" type="NODE">
+        <scale>1 1 1</scale>
+        <instance_geometry url="#Geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra type="parameters">
+        <technique profile="cga">
+          <placeholder/>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-09-23T18:33:29</created>
+    <modified>2016-09-23T18:33:29</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="CityEngineMaterial_548-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="CityEngineMaterial_548-material" name="CityEngineMaterial_548">
+      <instance_effect url="#CityEngineMaterial_548-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="mesh_CityEngineMaterial_546-mesh" name="mesh_CityEngineMaterial.546">
+      <mesh>
+        <source id="mesh_CityEngineMaterial_546-mesh-positions">
+          <float_array id="mesh_CityEngineMaterial_546-mesh-positions-array" count="24">70.40457 0 -17.64237 20.57797 0 -16.75238 24.7636 0 74.80405 73.45474 0 74.06239 70.40457 10 -17.64237 20.57797 10 -16.75238 24.7636 10 74.80405 73.45474 10 74.06239</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_546-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_CityEngineMaterial_546-mesh-normals">
+          <float_array id="mesh_CityEngineMaterial_546-mesh-normals-array" count="30">0 -1 0 0 1 0 -0.01785886 0 -0.9998406 -0.9989567 0 0.04566872 0.01523017 0 0.999884 0.9994474 0 -0.03324228 0 1 0 -0.01785892 0 -0.9998406 -0.9989567 0 0.04566872 0.9994474 0 -0.03324228</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_546-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_CityEngineMaterial_546-mesh-vertices">
+          <input semantic="POSITION" source="#mesh_CityEngineMaterial_546-mesh-positions"/>
+        </vertices>
+        <polylist material="CityEngineMaterial_548-material" count="12">
+          <input semantic="VERTEX" source="#mesh_CityEngineMaterial_546-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#mesh_CityEngineMaterial_546-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 2 0 1 0 4 1 6 1 7 1 1 2 4 2 0 2 2 3 5 3 1 3 3 4 6 4 2 4 0 5 7 5 3 5 0 0 3 0 2 0 4 6 5 6 6 6 1 7 5 7 4 7 2 8 6 8 5 8 3 4 7 4 6 4 0 9 4 9 7 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="CityEngineMaterial" name="CityEngineMaterial" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_CityEngineMaterial_546-mesh" name="CityEngineMaterial">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="CityEngineMaterial_548-material" target="#CityEngineMaterial_548-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

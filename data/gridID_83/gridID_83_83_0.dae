@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>wzl</author>
+      <authoring_tool>CityEngine 2015.1.2047 0605R</authoring_tool>
+    </contributor>
+    <created>2016-09-23T17:34:49</created>
+    <modified>2016-09-23T17:34:49</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="VisualMaterial" name="CityEngineMaterial">
+      <instance_effect url="#Effect"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Geometry0" name="mesh_CityEngineMaterial">
+      <mesh>
+        <source id="GeometrySource0" name="mesh_CityEngineMaterial_positions">
+          <float_array id="GeometrySource0-array" count="126">-2.632919175550342 0 37.55834157858044 -47.02711473219097 0 39.06639821920544 -44.72282396070659 0 87.4357753554359 -43.03074632398784 0 86.42216070089489 -42.42962632887066 0 111.3545909682289 -44.18847642652691 0 111.3175426283851 -44.18849168531597 0 113.7403255263344 10.69203199632466 0 112.5041881361976 14.56594099290669 0 102.6276546278969 84.77515424974262 0 119.8591075697914 86.16662611253559 0 116.7193294325844 90.32995619066059 0 106.7191539565101 95.91821302659809 0 90.99576528463512 97.99987806566059 0 74.48125036153942 97.73272718675434 0 60.57488210592419 95.78460706956684 0 45.76616628561169 92.53411878831684 0 33.15777547750622 88.89398206956684 0 23.80029256734997 86.52283491380512 0 18.71984060201794 56.93415464647114 0 54.29540212545544 -4.280441148206592 0 54.29539449606091 -2.632919175550342 10 37.55834157858044 -47.02711473219097 10 39.06639821920544 -44.72282396070659 10 87.4357753554359 -43.03074632398784 10 86.42216070089489 -42.42962632887066 10 111.3545909682289 -44.18847642652691 10 111.3175426283851 -44.18849168531597 10 113.7403255263344 10.69203199632466 10 112.5041881361976 14.56594099290669 10 102.6276546278969 84.77515424974262 10 119.8591075697914 86.16662611253559 10 116.7193294325844 90.32995619066059 10 106.7191539565101 95.91821302659809 10 90.99576528463512 97.99987806566059 10 74.48125036153942 97.73272718675434 10 60.57488210592419 95.78460706956684 10 45.76616628561169 92.53411878831684 10 33.15777547750622 88.89398206956684 10 23.80029256734997 86.52283491380512 10 18.71984060201794 56.93415464647114 10 54.29540212545544 -4.280441148206592 10 54.29539449606091 </float_array>
+          <technique_common>
+            <accessor source="#GeometrySource0-array" count="42" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry0-vertices">
+          <input semantic="POSITION" source="#GeometrySource0"/>
+        </vertices>
+        <polylist material="Material" count="23">
+          <input semantic="VERTEX" source="#Geometry0-vertices" offset="0"/>
+          <vcount>21 21 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>1 0 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 0 1 22 21 1 2 23 22 2 3 24 23 3 4 25 24 4 5 26 25 5 6 27 26 6 7 28 27 7 8 29 28 8 9 30 29 9 10 31 30 10 11 32 31 11 12 33 32 12 13 34 33 13 14 35 34 14 15 36 35 15 16 37 36 16 17 38 37 17 18 39 38 18 19 40 39 19 20 41 40 20 0 21 41</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="scene_gridID_83_83_0">
+      <node name="CityEngineMaterial" type="NODE">
+        <scale>1 1 1</scale>
+        <instance_geometry url="#Geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra type="parameters">
+        <technique profile="cga">
+          <placeholder/>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

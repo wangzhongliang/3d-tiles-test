@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>wzl</author>
+      <authoring_tool>CityEngine 2015.1.2047 0605R</authoring_tool>
+    </contributor>
+    <created>2016-09-23T17:27:33</created>
+    <modified>2016-09-23T17:27:33</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="VisualMaterial" name="CityEngineMaterial">
+      <instance_effect url="#Effect"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Geometry0" name="mesh_CityEngineMaterial">
+      <mesh>
+        <source id="GeometrySource0" name="mesh_CityEngineMaterial_positions">
+          <float_array id="GeometrySource0-array" count="60">4.30115974880755 0 21.86428102105856 -21.01289283297956 0 -11.38479772955179 -44.04490577243269 0 6.339802108705044 -20.97950660251081 0 36.63472493737936 -15.99238692782819 0 32.80306085199118 -13.74372779391706 0 35.75716241449118 -27.07981788180768 0 9.417499862611293 -18.10746680758893 0 21.20915826410055 -13.23167525790632 0 17.46401055902243 -22.21516334079206 0 5.672352157533169 4.30115974880755 17 21.86428102105856 -21.01289283297956 17 -11.38479772955179 -44.04490577243269 17 6.339802108705044 -20.97950660251081 17 36.63472493737936 -15.99238692782819 17 32.80306085199118 -13.74372779391706 17 35.75716241449118 -27.07981788180768 17 9.417499862611293 -22.21516334079206 17 5.672352157533169 -13.23167525790632 17 17.46401055902243 -18.10746680758893 17 21.20915826410055 </float_array>
+          <technique_common>
+            <accessor source="#GeometrySource0-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry0-vertices">
+          <input semantic="POSITION" source="#GeometrySource0"/>
+        </vertices>
+        <polygons material="Material" count="12">
+          <input semantic="VERTEX" source="#Geometry0-vertices" offset="0"/>
+          <ph>
+            <p>1 0 5 4 3 2</p>
+            <h>9 6 7 8</h>
+          </ph>
+          <ph>
+            <p>10 11 12 13 14 15</p>
+            <h>16 17 18 19</h>
+          </ph>
+          <p>0 1 11 10</p>
+          <p>1 2 12 11</p>
+          <p>2 3 13 12</p>
+          <p>3 4 14 13</p>
+          <p>4 5 15 14</p>
+          <p>5 0 10 15</p>
+          <p>6 9 17 16</p>
+          <p>9 8 18 17</p>
+          <p>8 7 19 18</p>
+          <p>7 6 16 19</p>
+        </polygons>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="scene_gridID_16_1_0">
+      <node name="CityEngineMaterial" type="NODE">
+        <scale>1 1 1</scale>
+        <instance_geometry url="#Geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra type="parameters">
+        <technique profile="cga">
+          <placeholder/>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-09-23T18:33:30</created>
+    <modified>2016-09-23T18:33:30</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="CityEngineMaterial_639-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="CityEngineMaterial_640-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="CityEngineMaterial_641-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="CityEngineMaterial_642-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="CityEngineMaterial_639-material" name="CityEngineMaterial_639">
+      <instance_effect url="#CityEngineMaterial_639-effect"/>
+    </material>
+    <material id="CityEngineMaterial_640-material" name="CityEngineMaterial_640">
+      <instance_effect url="#CityEngineMaterial_640-effect"/>
+    </material>
+    <material id="CityEngineMaterial_641-material" name="CityEngineMaterial_641">
+      <instance_effect url="#CityEngineMaterial_641-effect"/>
+    </material>
+    <material id="CityEngineMaterial_642-material" name="CityEngineMaterial_642">
+      <instance_effect url="#CityEngineMaterial_642-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="mesh_CityEngineMaterial_637-mesh" name="mesh_CityEngineMaterial.637">
+      <mesh>
+        <source id="mesh_CityEngineMaterial_637-mesh-positions">
+          <float_array id="mesh_CityEngineMaterial_637-mesh-positions-array" count="36">10.69202 0 -57.4958 3.433968 0 -39.00349 79.98842 0 -19.6089 90.79757 0 -48.65754 84.77517 0 -50.14088 14.56593 0 -67.37233 10.69202 203 -57.4958 3.433968 203 -39.00349 79.98842 203 -19.6089 90.79757 203 -48.65754 84.77517 203 -50.14088 14.56593 203 -67.37233</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_637-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_CityEngineMaterial_637-mesh-normals">
+          <float_array id="mesh_CityEngineMaterial_637-mesh-normals-array" count="45">0 -1 0 0 1 4.78267e-7 -0.9308676 0 -0.3653567 -0.2455851 0 0.9693751 0.9372181 0 0.3487437 0.2391557 0 -0.9709812 0.2383562 0 -0.9711778 -0.9309489 0 -0.3651496 0 1 0 0 1 -2.08756e-6 -0.9308676 0 -0.3653568 -0.245585 0 0.9693751 0.9372183 0 0.3487437 0.2383561 0 -0.9711778 -0.930949 0 -0.3651493</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_637-mesh-normals-array" count="15" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_CityEngineMaterial_637-mesh-vertices">
+          <input semantic="POSITION" source="#mesh_CityEngineMaterial_637-mesh-positions"/>
+        </vertices>
+        <polylist material="CityEngineMaterial_639-material" count="20">
+          <input semantic="VERTEX" source="#mesh_CityEngineMaterial_637-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#mesh_CityEngineMaterial_637-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 4 0 2 0 6 1 8 1 10 1 1 2 6 2 0 2 2 3 7 3 1 3 3 4 8 4 2 4 4 5 9 5 3 5 5 6 10 6 4 6 0 7 11 7 5 7 2 0 1 0 0 0 0 0 5 0 4 0 4 0 3 0 2 0 6 8 7 8 8 8 8 8 9 8 10 8 10 9 11 9 6 9 1 10 7 10 6 10 2 11 8 11 7 11 3 12 9 12 8 12 4 5 10 5 9 5 5 13 11 13 10 13 0 14 6 14 11 14</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="mesh_CityEngineMaterial_638-mesh" name="mesh_CityEngineMaterial.638">
+      <mesh>
+        <source id="mesh_CityEngineMaterial_638-mesh-positions">
+          <float_array id="mesh_CityEngineMaterial_638-mesh-positions-array" count="168">-86.60122 0 -1.363893 -104.8353 0 -5.888063 -116.1454 0 39.68732 -98.30088 0 44.11255 -95.47338 0 32.7033 -84.41935 0 35.45983 -86.65687 0 44.48339 -65.69541 0 49.68743 -63.60261 0 41.29425 -53.0829 0 43.90246 -54.80836 0 50.84936 -30.07315 0 56.99279 -29.00449 0 52.67876 -17.20463 0 55.60832 -15.25657 0 47.75909 -9.423376 0 49.20531 -5.271153 0 32.45604 -9.100561 0 31.50426 -7.508695 0 25.08886 -21.55723 0 21.60302 -20.45518 0 17.15307 -45.99186 0 10.83654 -48.05125 0 19.14318 -55.22023 0 17.36322 -52.61536 0 6.843863 -77.60659 0 0.663321 -79.833 0 9.649841 -88.78308 0 7.437251 -86.60122 10 -1.363893 -104.8353 10 -5.888063 -116.1454 10 39.68732 -98.30088 10 44.11255 -95.47338 10 32.7033 -84.41935 10 35.45983 -86.65687 10 44.48339 -65.69541 10 49.68743 -63.60261 10 41.29425 -53.0829 10 43.90246 -54.80836 10 50.84936 -30.07315 10 56.99279 -29.00449 10 52.67876 -17.20463 10 55.60832 -15.25657 10 47.75909 -9.423376 10 49.20531 -5.271153 10 32.45604 -9.100561 10 31.50426 -7.508695 10 25.08886 -21.55723 10 21.60302 -20.45518 10 17.15307 -45.99186 10 10.83654 -48.05125 10 19.14318 -55.22023 10 17.36322 -52.61536 10 6.843863 -77.60659 10 0.663321 -79.833 10 9.649841 -88.78308 10 7.437251</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_638-mesh-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_CityEngineMaterial_638-mesh-normals">
+          <float_array id="mesh_CityEngineMaterial_638-mesh-normals-array" count="138">0 -1 0 0 1 0 0.2408139 0 -0.9705713 -0.970561 0 -0.2408556 -0.2406973 0 0.9706003 0.970637 0 0.2405491 -0.2419593 0 0.9702864 -0.9706057 0 -0.2406753 -0.2409524 0 0.970537 0.9702917 0 0.2419381 -0.2406491 0 0.9706122 -0.9705117 0 -0.2410542 -0.2410445 0 0.9705141 0.9706617 0 0.2404493 -0.2409561 0 0.9705361 0.9705557 0 0.240877 -0.2406447 0 0.9706134 0.9706193 0 0.2406209 0.2412055 0 -0.9704741 0.9705678 0 0.2408286 0.2408255 0 -0.9705684 0.9706756 0 0.2403935 0.2401148 0 -0.9707446 -0.9706158 0 -0.2406352 0.2409707 0 -0.9705324 0.9706823 0 0.2403662 0.2400757 0 -0.9707542 -0.970654 0 -0.2404803 0.2399899 0 -0.9707754 0.9706189 0 0.240622 0 1 1.2804e-7 0 1 0 0 1 0 0 1 0 0 1 1.55184e-7 0 1 -3.18968e-7 0 1 0 0 1 0 -0.970561 0 -0.2408556 -0.2406976 0 0.9706002 0.9706371 0 0.240549 0.9702917 0 0.2419379 0.9706619 0 0.2404486 0.9705558 0 0.2408767 0.9706192 0 0.2406209 -0.9706541 0 -0.2404803</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_638-mesh-normals-array" count="46" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_CityEngineMaterial_638-mesh-vertices">
+          <input semantic="POSITION" source="#mesh_CityEngineMaterial_638-mesh-positions"/>
+        </vertices>
+        <polylist material="CityEngineMaterial_640-material" count="108">
+          <input semantic="VERTEX" source="#mesh_CityEngineMaterial_638-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#mesh_CityEngineMaterial_638-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>19 0 17 0 14 0 43 1 44 1 45 1 1 2 28 2 0 2 2 3 29 3 1 3 3 4 30 4 2 4 4 5 31 5 3 5 5 6 32 6 4 6 6 7 33 7 5 7 7 8 34 8 6 8 8 9 35 9 7 9 9 10 36 10 8 10 10 11 37 11 9 11 11 12 38 12 10 12 12 13 39 13 11 13 13 14 40 14 12 14 14 15 41 15 13 15 15 16 42 16 14 16 16 17 43 17 15 17 17 18 44 18 16 18 18 19 45 19 17 19 19 20 46 20 18 20 20 21 47 21 19 21 21 22 48 22 20 22 22 23 49 23 21 23 23 24 50 24 22 24 24 25 51 25 23 25 25 26 52 26 24 26 26 27 53 27 25 27 27 28 54 28 26 28 0 29 55 29 27 29 2 0 1 0 4 0 1 0 0 0 27 0 4 0 3 0 2 0 7 0 6 0 8 0 4 0 1 0 27 0 8 0 6 0 5 0 5 0 4 0 26 0 26 0 25 0 24 0 4 0 27 0 26 0 9 0 8 0 23 0 11 0 10 0 12 0 14 0 13 0 12 0 12 0 10 0 9 0 8 0 5 0 23 0 26 0 24 0 23 0 22 0 21 0 19 0 5 0 26 0 23 0 21 0 20 0 19 0 9 0 23 0 22 0 14 0 12 0 19 0 16 0 15 0 17 0 19 0 18 0 17 0 17 0 15 0 14 0 12 0 9 0 19 0 22 0 19 0 9 0 55 1 28 1 29 1 29 1 30 1 32 1 30 1 31 1 32 1 55 1 29 1 32 1 33 1 34 1 36 1 55 1 32 1 54 1 52 30 53 30 54 30 54 1 32 1 33 1 34 1 35 1 36 1 37 1 38 1 40 1 33 31 36 31 51 31 52 32 54 32 51 32 51 1 54 1 33 1 38 1 39 1 40 1 51 1 36 1 37 1 48 1 49 1 47 1 50 1 51 1 37 1 37 33 40 33 47 33 42 1 43 1 45 1 40 34 41 34 42 34 49 1 50 1 47 1 45 35 46 35 47 35 47 36 50 36 37 36 40 37 42 37 47 37 45 1 47 1 42 1 1 2 29 2 28 2 2 38 30 38 29 38 3 39 31 39 30 39 4 40 32 40 31 40 5 6 33 6 32 6 6 7 34 7 33 7 7 8 35 8 34 8 8 41 36 41 35 41 9 10 37 10 36 10 10 11 38 11 37 11 11 12 39 12 38 12 12 42 40 42 39 42 13 14 41 14 40 14 14 43 42 43 41 43 15 16 43 16 42 16 16 44 44 44 43 44 17 18 45 18 44 18 18 19 46 19 45 19 19 20 47 20 46 20 20 21 48 21 47 21 21 22 49 22 48 22 22 23 50 23 49 23 23 24 51 24 50 24 24 25 52 25 51 25 25 26 53 26 52 26 26 45 54 45 53 45 27 28 55 28 54 28 0 29 28 29 55 29</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="mesh_CityEngineMaterial_639-mesh" name="mesh_CityEngineMaterial.639">
+      <mesh>
+        <source id="mesh_CityEngineMaterial_639-mesh-positions">
+          <float_array id="mesh_CityEngineMaterial_639-mesh-positions-array" count="42">-44.46678 0 -77.15003 -60.05149 0 -74.34406 -60.04039 0 -59.0904 -44.18849 0 -58.68244 -42.42964 0 -58.64539 -43.03075 0 -83.57782 -44.72282 0 -82.56422 -44.46678 10 -77.15003 -60.05149 10 -74.34406 -60.04039 10 -59.0904 -44.18849 10 -58.68244 -42.42964 10 -58.64539 -43.03075 10 -83.57782 -44.72282 10 -82.56422</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_639-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_CityEngineMaterial_639-mesh-normals">
+          <float_array id="mesh_CityEngineMaterial_639-mesh-normals-array" count="39">0 -1 0 0 1 0 -0.1771978 0 -0.9841753 -0.9999998 0 7.27994e-4 -0.02572709 0 0.9996691 -0.02105927 0 0.9997782 0.9997096 0 -0.0241025 -0.5138859 0 -0.8578587 -0.9988837 0 0.04723894 -0.177197 0 -0.9841755 -0.9999998 0 7.27995e-4 0.9997096 0 -0.02410244 -0.5138813 0 -0.8578613</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_639-mesh-normals-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_CityEngineMaterial_639-mesh-vertices">
+          <input semantic="POSITION" source="#mesh_CityEngineMaterial_639-mesh-positions"/>
+        </vertices>
+        <polylist material="CityEngineMaterial_641-material" count="24">
+          <input semantic="VERTEX" source="#mesh_CityEngineMaterial_639-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#mesh_CityEngineMaterial_639-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 4 0 3 0 7 1 12 1 13 1 1 2 7 2 0 2 2 3 8 3 1 3 3 4 9 4 2 4 4 5 10 5 3 5 5 6 11 6 4 6 6 7 12 7 5 7 0 8 13 8 6 8 2 0 1 0 3 0 0 0 6 0 5 0 5 0 4 0 0 0 3 0 1 0 0 0 7 1 8 1 10 1 9 1 10 1 8 1 11 1 12 1 7 1 7 1 10 1 11 1 1 9 8 9 7 9 2 10 9 10 8 10 3 4 10 4 9 4 4 5 11 5 10 5 5 11 12 11 11 11 6 12 13 12 12 12 0 8 7 8 13 8</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="mesh_CityEngineMaterial_640-mesh" name="mesh_CityEngineMaterial.640">
+      <mesh>
+        <source id="mesh_CityEngineMaterial_640-mesh-positions">
+          <float_array id="mesh_CityEngineMaterial_640-mesh-positions-array" count="24">-13.98753 0 -39.09003 -12.97447 0 -43.54005 -18.11748 0 -44.72669 -19.11931 0 -39.91822 -13.98753 8 -39.09003 -12.97447 8 -43.54005 -18.11748 8 -44.72669 -19.11931 8 -39.91822</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_640-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_CityEngineMaterial_640-mesh-normals">
+          <float_array id="mesh_CityEngineMaterial_640-mesh-normals-array" count="18">0 -1 0 0 1 0 0.9750525 0 0.2219744 0.2248231 0 -0.9743997 -0.9789777 0 -0.2039675 -0.1593224 0 0.9872266</float_array>
+          <technique_common>
+            <accessor source="#mesh_CityEngineMaterial_640-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_CityEngineMaterial_640-mesh-vertices">
+          <input semantic="POSITION" source="#mesh_CityEngineMaterial_640-mesh-positions"/>
+        </vertices>
+        <polylist material="CityEngineMaterial_642-material" count="12">
+          <input semantic="VERTEX" source="#mesh_CityEngineMaterial_640-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#mesh_CityEngineMaterial_640-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 2 0 1 0 4 1 6 1 7 1 1 2 4 2 0 2 2 3 5 3 1 3 3 4 6 4 2 4 0 5 7 5 3 5 0 0 3 0 2 0 4 1 5 1 6 1 1 2 5 2 4 2 2 3 6 3 5 3 3 4 7 4 6 4 0 5 4 5 7 5</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="CityEngineMaterial" name="CityEngineMaterial" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_CityEngineMaterial_637-mesh" name="CityEngineMaterial">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="CityEngineMaterial_639-material" target="#CityEngineMaterial_639-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="CityEngineMaterial_001" name="CityEngineMaterial_001" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_CityEngineMaterial_638-mesh" name="CityEngineMaterial_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="CityEngineMaterial_640-material" target="#CityEngineMaterial_640-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="CityEngineMaterial_002" name="CityEngineMaterial_002" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_CityEngineMaterial_639-mesh" name="CityEngineMaterial_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="CityEngineMaterial_641-material" target="#CityEngineMaterial_641-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="CityEngineMaterial_003" name="CityEngineMaterial_003" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_CityEngineMaterial_640-mesh" name="CityEngineMaterial_003">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="CityEngineMaterial_642-material" target="#CityEngineMaterial_642-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

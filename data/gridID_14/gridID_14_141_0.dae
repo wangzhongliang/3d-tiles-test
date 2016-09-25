@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>wzl</author>
+      <authoring_tool>CityEngine 2015.1.2047 0605R</authoring_tool>
+    </contributor>
+    <created>2016-09-23T17:27:27</created>
+    <modified>2016-09-23T17:27:27</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="VisualMaterial" name="CityEngineMaterial">
+      <instance_effect url="#Effect"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Geometry0" name="mesh_CityEngineMaterial">
+      <mesh>
+        <source id="GeometrySource0" name="mesh_CityEngineMaterial_positions">
+          <float_array id="GeometrySource0-array" count="84">-72.39683083072304 0 -25.69580935686827 -82.47126320376992 0 14.16557980328798 -65.86237648501992 0 18.36796856671572 -65.11655739322304 0 15.42626095563173 -55.26478127017617 0 17.91063214093447 -55.83250359073281 0 20.17253399640322 -37.85441521182656 0 24.70872784405947 -33.83576897159219 0 8.825980193912982 -30.79673698917031 0 -3.1262311860919 -28.14732292667031 0 -13.7559337541461 -46.02525261417031 0 -18.27973508089781 -46.53733757510781 0 -16.24030589312315 -56.17759445682168 0 -18.68763207644224 -55.48740890994668 0 -21.43159007281065 -72.39683083072304 56 -25.69580935686827 -82.47126320376992 56 14.16557980328798 -65.86237648501992 56 18.36796856671572 -65.11655739322304 56 15.42626095563173 -55.26478127017617 56 17.91063214093447 -55.83250359073281 56 20.17253399640322 -37.85441521182656 56 24.70872784405947 -33.83576897159219 56 8.825980193912982 -30.79673698917031 56 -3.1262311860919 -28.14732292667031 56 -13.7559337541461 -46.02525261417031 56 -18.27973508089781 -46.53733757510781 56 -16.24030589312315 -56.17759445682168 56 -18.68763207644224 -55.48740890994668 56 -21.43159007281065 </float_array>
+          <technique_common>
+            <accessor source="#GeometrySource0-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry0-vertices">
+          <input semantic="POSITION" source="#GeometrySource0"/>
+        </vertices>
+        <polylist material="Material" count="16">
+          <input semantic="VERTEX" source="#Geometry0-vertices" offset="0"/>
+          <vcount>14 14 4 4 4 4 4 4 4 4 4 4 4 4 4 4</vcount>
+          <p>1 0 13 12 11 10 9 8 7 6 5 4 3 2 14 15 16 17 18 19 20 21 22 23 24 25 26 27 0 1 15 14 1 2 16 15 2 3 17 16 3 4 18 17 4 5 19 18 5 6 20 19 6 7 21 20 7 8 22 21 8 9 23 22 9 10 24 23 10 11 25 24 11 12 26 25 12 13 27 26 13 0 14 27</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="scene_gridID_14_141_0">
+      <node name="CityEngineMaterial" type="NODE">
+        <scale>1 1 1</scale>
+        <instance_geometry url="#Geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra type="parameters">
+        <technique profile="cga">
+          <placeholder/>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>
