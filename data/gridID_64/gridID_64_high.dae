@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-10-07T16:10:07</created>
+    <modified>2016-10-07T16:10:07</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_geometries>
+    <geometry id="multipatch_footprint_007-mesh" name="multipatch_footprint.007">
+      <mesh>
+        <source id="multipatch_footprint_007-mesh-positions">
+          <float_array id="multipatch_footprint_007-mesh-positions-array" count="36">12.9581 -74.57608 1.375202 12.86406 -71.29813 1.375202 15.62319 -71.21817 1.375202 15.03961 -50.88638 1.375202 -12.88768 -51.6965 1.375202 -12.21036 -75.30658 1.375202 12.9581 -74.57608 7.700178 12.86406 -71.29813 7.700178 15.62319 -71.21817 7.700178 15.03961 -50.88638 7.700178 -12.88768 -51.6965 7.700178 -12.21036 -75.30658 7.700178</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_007-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="multipatch_footprint_007-mesh-normals">
+          <float_array id="multipatch_footprint_007-mesh-normals-array" count="39">0 0 1 0.9995888 0.02867692 0 0.0289666 -0.9995804 0 0.9995883 0.02869051 0 -0.02899593 0.9995796 0 -0.9995888 -0.02867597 0 0.02901214 -0.9995791 0 0 0 1 0 0 1 0.9995887 0.02867692 0 0.9995884 0.02869069 0 -0.02899593 0.9995796 0 0.02901214 -0.9995791 0</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_007-mesh-normals-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="multipatch_footprint_007-mesh-vertices">
+          <input semantic="POSITION" source="#multipatch_footprint_007-mesh-positions"/>
+        </vertices>
+        <polylist count="16">
+          <input semantic="VERTEX" source="#multipatch_footprint_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#multipatch_footprint_007-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>7 0 10 0 11 0 7 1 0 1 1 1 8 2 1 2 2 2 9 3 2 3 3 3 10 4 3 4 4 4 11 5 4 5 5 5 6 6 5 6 0 6 11 7 6 7 7 7 7 8 8 8 9 8 9 8 10 8 7 8 7 9 6 9 0 9 8 2 7 2 1 2 9 10 8 10 2 10 10 11 9 11 3 11 11 5 10 5 4 5 6 12 11 12 5 12</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="multipatch_footprint_008-mesh" name="multipatch_footprint.008">
+      <mesh>
+        <source id="multipatch_footprint_008-mesh-positions">
+          <float_array id="multipatch_footprint_008-mesh-positions-array" count="24">52.44398 -47.28015 1.476898 52.34189 -43.62601 1.476898 48.70018 -43.72888 1.476898 48.80228 -47.38299 1.476898 52.44398 -47.28015 12.74889 52.34189 -43.62601 12.74889 48.70018 -43.72888 12.74889 48.80228 -47.38299 12.74889</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_008-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="multipatch_footprint_008-mesh-normals">
+          <float_array id="multipatch_footprint_008-mesh-normals-array" count="30">0 0 1 0.9996101 0.02792423 0 -0.02823776 0.9996013 0 -0.9996099 -0.02793037 0 0.02822947 -0.9996015 0 0 0 1 0.99961 0.02792721 0 -0.02823776 0.9996013 0 -0.99961 -0.02792739 0 0.02822947 -0.9996015 0</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_008-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="multipatch_footprint_008-mesh-vertices">
+          <input semantic="POSITION" source="#multipatch_footprint_008-mesh-positions"/>
+        </vertices>
+        <polylist count="10">
+          <input semantic="VERTEX" source="#multipatch_footprint_008-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#multipatch_footprint_008-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 6 0 7 0 5 1 0 1 1 1 6 2 1 2 2 2 7 3 2 3 3 3 4 4 3 4 0 4 4 5 5 5 6 5 5 6 4 6 0 6 6 7 5 7 1 7 7 8 6 8 2 8 4 9 7 9 3 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="multipatch_footprint_010-mesh" name="multipatch_footprint.010">
+      <mesh>
+        <source id="multipatch_footprint_010-mesh-positions">
+          <float_array id="multipatch_footprint_010-mesh-positions-array" count="150">66.45657 -45.36587 1.270103 52.40158 -45.76285 1.270103 52.44398 -47.28015 1.270103 51.63058 -47.3031 1.270103 52.18291 -67.07282 1.270103 54.91662 -66.99558 1.270103 54.98743 -69.52942 1.270103 58.32394 -69.43518 1.270103 58.35651 -70.60095 1.270103 66.29276 -70.3768 1.270103 69.09841 -67.15241 1.270103 68.83449 -57.70566 1.270103 66.8029 -57.76303 1.270103 66.45657 -45.36587 7.093319 52.44398 -47.28015 7.093319 51.63058 -47.3031 7.093319 52.18291 -67.07282 7.093319 54.91662 -66.99558 7.093319 54.98743 -69.52942 7.093319 58.32394 -69.43518 7.093319 58.35651 -70.60095 7.093319 66.29276 -70.3768 7.093319 69.09841 -67.15241 7.093319 68.83449 -57.70566 7.093319 68.43654 -43.46115 1.169678 52.34997 -43.9155 1.169678 52.40158 -45.76285 1.169678 66.45657 -45.36587 1.169678 66.8029 -57.76303 1.169678 68.83449 -57.70566 1.169678 68.43654 -43.46115 7.093319 52.34997 -43.9155 7.093319 52.40158 -45.76285 7.093319 66.8029 -57.76303 7.093319 51.63058 -47.3031 1.485752 48.98013 -47.37796 1.485752 49.04669 -49.7601 1.485752 20.57863 -50.56421 1.485752 21.01535 -66.19443 1.485752 25.63671 -66.06388 1.485752 25.76152 -70.53137 1.485752 52.25369 -69.60663 1.485752 51.63058 -47.3031 7.700178 48.98013 -47.37796 7.700178 49.04669 -49.7601 7.700178 20.57863 -50.56421 7.700178 21.01535 -66.19443 7.700178 25.63671 -66.06388 7.700178 25.76152 -70.53137 7.700178 52.25369 -69.60663 7.700178</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_010-mesh-positions-array" count="50" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="multipatch_footprint_010-mesh-normals">
+          <float_array id="multipatch_footprint_010-mesh-normals-array" count="177">0 0 1 -0.02823299 0.9996014 0 -0.9996099 -0.02793145 0 -0.02820253 0.9996023 0 -0.99961 -0.02792757 0 0.02824318 -0.9996011 0 -0.9996098 -0.02793139 0 0.02823323 -0.9996014 0 -0.9996098 -0.02793282 0 0.02823281 -0.9996014 0 0.7543929 -0.6564233 0 0.99961 0.0279268 0 -0.02822917 0.9996016 0 0.9996101 0.02792489 0 0 0 1 -0.02823251 0.9996014 0 -0.99961 -0.02792692 0 0.02823299 -0.9996014 0 -0.99961 -0.02792668 0 0.02822917 -0.9996016 0 0.9996101 0.02792602 0 -0.02823299 0.9996014 0 -0.9996101 -0.02792644 0 -0.02823466 0.9996014 0 -0.99961 -0.02793008 0 0.02823895 -0.9996012 0 -0.99961 -0.02792793 0 0.03488504 -0.9993914 0 0.99961 0.0279271 0 0 0 1 0 0 1 -1.92403e-7 0 1 1.40894e-7 0 1 -2.13789e-7 0 1 -0.02823299 0.9996014 0 -0.02820289 0.9996022 0 -0.99961 -0.02792704 0 0.0282433 -0.9996011 0 -0.9996098 -0.02793139 0 0.02823323 -0.9996014 0 -0.9996101 -0.02792382 0 0.7543941 -0.6564219 0 -0.02822935 0.9996016 0 0.99961 0.02792656 0 1.46613e-7 0 1 0 0 1 -0.02823251 0.9996014 0 -0.9996102 -0.02792137 0 0.02823299 -0.9996014 0 -0.9996101 -0.02792501 0 0.02822929 -0.9996015 0 0.99961 0.02792674 0 0 0 1 0 0 1 0 0 1 -0.02823287 0.9996014 0 -0.99961 -0.02793055 0 -0.9996099 -0.0279299 0 0.03488504 -0.9993914 0</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_010-mesh-normals-array" count="59" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="multipatch_footprint_010-mesh-vertices">
+          <input semantic="POSITION" source="#multipatch_footprint_010-mesh-positions"/>
+        </vertices>
+        <polylist count="75">
+          <input semantic="VERTEX" source="#multipatch_footprint_010-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#multipatch_footprint_010-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>14 0 17 0 33 0 32 1 0 1 1 1 14 2 1 2 2 2 15 3 2 3 3 3 16 4 3 4 4 4 17 5 4 5 5 5 18 6 5 6 6 6 19 7 6 7 7 7 20 8 7 8 8 8 21 9 8 9 9 9 22 10 9 10 10 10 23 11 10 11 11 11 33 12 11 12 12 12 13 13 12 13 0 13 30 14 13 14 23 14 31 15 24 15 25 15 32 16 25 16 26 16 13 17 26 17 27 17 33 18 27 18 28 18 23 19 28 19 29 19 30 20 29 20 24 20 44 14 47 14 49 14 43 21 34 21 35 21 44 22 35 22 36 22 45 23 36 23 37 23 46 24 37 24 38 24 47 25 38 25 39 25 48 26 39 26 40 26 49 27 40 27 41 27 42 28 41 28 34 28 33 29 13 29 14 29 14 14 15 14 16 14 13 30 32 30 14 30 22 31 23 31 33 31 20 14 21 14 19 14 17 32 18 32 19 32 19 14 21 14 22 14 22 14 33 14 19 14 14 33 16 33 17 33 17 14 19 14 33 14 32 34 13 34 0 34 14 2 32 2 1 2 15 35 14 35 2 35 16 36 15 36 3 36 17 37 16 37 4 37 18 38 17 38 5 38 19 39 18 39 6 39 20 40 19 40 7 40 21 9 20 9 8 9 22 41 21 41 9 41 23 11 22 11 10 11 33 42 23 42 11 42 13 43 33 43 12 43 30 14 31 14 13 14 13 44 33 44 23 44 31 45 32 45 13 45 31 46 30 46 24 46 32 47 31 47 25 47 13 48 32 48 26 48 33 49 13 49 27 49 23 50 33 50 28 50 30 51 23 51 29 51 49 52 42 52 44 52 44 14 45 14 47 14 42 14 43 14 44 14 47 53 48 53 49 53 45 54 46 54 47 54 43 55 42 55 34 55 44 56 43 56 35 56 45 23 44 23 36 23 46 57 45 57 37 57 47 25 46 25 38 25 48 26 47 26 39 26 49 58 48 58 40 58 42 28 49 28 41 28</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="gridID_64_w255188232_join" name="gridID_64_w255188232_join" type="NODE">
+        <matrix sid="transform">1 0 0 3.79562e-4 0 1 0 3.35693e-4 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#multipatch_footprint_007-mesh" name="gridID_64_w255188232_join"/>
+      </node>
+      <node id="gridID_64_w300449063_join" name="gridID_64_w300449063_join" type="NODE">
+        <matrix sid="transform">1 0 0 3.79562e-4 0 1 0 3.35693e-4 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#multipatch_footprint_008-mesh" name="gridID_64_w300449063_join"/>
+      </node>
+      <node id="gridID_64_w300462441_join" name="gridID_64_w300462441_join" type="NODE">
+        <matrix sid="transform">1 0 0 3.79562e-4 0 1 0 3.35693e-4 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#multipatch_footprint_010-mesh" name="gridID_64_w300462441_join"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-10-07T16:10:07</created>
+    <modified>2016-10-07T16:10:07</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_geometries>
+    <geometry id="multipatch_footprint_203-mesh" name="multipatch_footprint.203">
+      <mesh>
+        <source id="multipatch_footprint_203-mesh-positions">
+          <float_array id="multipatch_footprint_203-mesh-positions-array" count="24">54.22407 -88.20035 1.196068 53.78606 -70.97022 1.196068 22.53314 -71.77344 1.196068 22.97119 -89.00357 1.196068 54.22407 -88.20035 5.547066 53.78606 -70.97022 5.547066 22.53314 -71.77344 5.547066 22.97119 -89.00357 5.547066</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_203-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="multipatch_footprint_203-mesh-normals">
+          <float_array id="multipatch_footprint_203-mesh-normals-array" count="30">0 0 1 0.9996771 0.02541351 0 -0.02569222 0.99967 0 -0.9996771 -0.0254153 0 0.02569222 -0.99967 0 0 0 1 0.999677 0.02541309 0 -0.02569222 0.99967 0 -0.9996771 -0.02541512 0 0.02569222 -0.99967 0</float_array>
+          <technique_common>
+            <accessor source="#multipatch_footprint_203-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="multipatch_footprint_203-mesh-vertices">
+          <input semantic="POSITION" source="#multipatch_footprint_203-mesh-positions"/>
+        </vertices>
+        <polylist count="10">
+          <input semantic="VERTEX" source="#multipatch_footprint_203-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#multipatch_footprint_203-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 6 0 7 0 5 1 0 1 1 1 6 2 1 2 2 2 7 3 2 3 3 3 4 4 3 4 0 4 4 5 5 5 6 5 5 6 4 6 0 6 6 7 5 7 1 7 7 8 6 8 2 8 4 9 7 9 3 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="gridID_65_w300462723_join" name="gridID_65_w300462723_join" type="NODE">
+        <matrix sid="transform">1 0 0 3.8147e-4 0 1 0 3.35693e-4 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#multipatch_footprint_203-mesh" name="gridID_65_w300462723_join"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
