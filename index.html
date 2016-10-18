@@ -25,9 +25,25 @@
       html, body, #cesiumContainer {
           width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
       }
+	  #toolbar{
+		margin: 5px;
+		padding: 2px 5px;
+		position: absolute;
+		z-index:10;
+	  }
   </style>
 </head>
 <body>
+	<div id="toolbar">
+		<select class="cesium-button" onchange="loadTileset(this.value)">
+			<option value="buildings" selected = "selected">建筑物</option>
+			<option value="trees">树木</option>
+		</select>
+		<button class="cesium-button" onclick="removeStyle()">去除样式</button>
+		<button class="cesium-button" onclick="showBox()">显示边框</button>
+		<button class="cesium-button" data-toggle="modal" data-target="#myModal">声明样式</button>
+	</div>
+	
   <div id="cesiumContainer"></div>
   <!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -57,7 +73,7 @@
         $('#cp2').colorpicker();
     });
 	var myTextArea = document.getElementById("editor");
-
+	//树木颜色 "color": "(${leaf_type} === 'broadleaved') ? color('red') : color('blue')"
 	var json = {"color" : {
 						"conditions" : {	
 							"${height} >= 200" : "color('#ffe5cc')",
@@ -88,7 +104,13 @@
 		console.log(color);
 		tileset.style = new Cesium.Cesium3DTileStyle(color);
 	}
-	
+	function removeStyle(){
+		tileset.style = undefined;
+	}
+	function showBox(){
+		tileset.debugShowBoundingVolume = !tileset.debugShowBoundingVolume;
+		tileset.debugShowContentBoundingVolume = !tileset.debugShowContentBoundingVolume;
+	}
     var osm = Cesium.createOpenStreetMapImageryProvider({
 		url : 'https://a.tile.openstreetmap.org/'
 	});
@@ -105,6 +127,7 @@
 	btn.setAttribute('data-toggle','modal');
 	btn.setAttribute('data-target','#myModal');
 	btn.setAttribute('class','cesium-button cesium-toolbar-button');
+	btn.innerHTML = '<img style="padding:1px;" src="img/color.png">';
 	document.getElementsByClassName('cesium-viewer-toolbar')[0].appendChild(btn);
 	
 	viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function(commandInfo){
@@ -124,7 +147,8 @@
 	scene.debugShowFramesPerSecond = true;
 
 	//var dataurl = "./data/"
-	var dataurl = "./data/tileset_high.json"
+	var buildings = "./buildings/"
+	var trees = "./tree/"
 	var tileset;
 	
 	function loadTileset(url) {
@@ -132,21 +156,21 @@
 
 		tileset = scene.primitives.add(new Cesium.Cesium3DTileset({
 			url : url,
-			debugShowStatistics : true,
-			maximumNumberOfLoadedTiles : 3
+			debugShowStatistics : true//,
+			//maximumNumberOfLoadedTiles : 3
 		}));
 
 		return tileset.readyPromise.then(function(tileset) {
-			// var boundingSphere = tileset.boundingSphere;
-			// viewer.camera.viewBoundingSphere(boundingSphere, new Cesium.HeadingPitchRange(0, -2.0, 0));
-			// viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-			viewer.camera.setView({
-				destination : new Cesium.Cartesian3(978703.4032039205, -5664709.285048889, 2754627.305272117),
-				orientation : {
-					direction : new Cesium.Cartesian3(0.33506436388093397, 0.7178758873584659, 0.6102344487214404),
-					up : new Cesium.Cartesian3(0.27649053726026684, -0.6940744040291643, 0.6646906833084766)
-				}
-			});	
+			var boundingSphere = tileset.boundingSphere;
+			viewer.camera.viewBoundingSphere(boundingSphere, new Cesium.HeadingPitchRange(0, -2.0, 0));
+			viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+			// viewer.camera.setView({
+				// destination : new Cesium.Cartesian3(978703.4032039205, -5664709.285048889, 2754627.305272117),
+				// orientation : {
+					// direction : new Cesium.Cartesian3(0.33506436388093397, 0.7178758873584659, 0.6102344487214404),
+					// up : new Cesium.Cartesian3(0.27649053726026684, -0.6940744040291643, 0.6646906833084766)
+				// }
+			// });	
 			var properties = tileset.properties;
 			if (Cesium.defined(properties) && Cesium.defined(properties.height)) {
 				tileset.style = new Cesium.Cesium3DTileStyle({
@@ -154,17 +178,17 @@
 	//              "color" : "color('cyan', 0.5)",
 	//              "color" : "rgb(100, 255, 190)",
 	//              "color" : "hsla(0.9, 0.6, 0.7, 0.75)",
-					"color" : {
-						"conditions" : {	
-							"${height} >= 200" : "color('#ffe5cc')",
-							"${height} >= 150" : "color('#ffffcc')",
-							"${height} >= 100" : "color('#e5ffcc')",
-							"${height} >= 50" : "color('#ccffcc')",
-							"${height} >= 20" : "color('#ccffe5')",
-							"${height} >= 10" : "color('#ccffff')",
-							"true" : "color('#cce5ff')"
-						}
-					},
+					// "color" : {
+						// "conditions" : {	
+							// "${height} >= 200" : "color('#ffe5cc')",
+							// "${height} >= 150" : "color('#ffffcc')",
+							// "${height} >= 100" : "color('#e5ffcc')",
+							// "${height} >= 50" : "color('#ccffcc')",
+							// "${height} >= 20" : "color('#ccffe5')",
+							// "${height} >= 10" : "color('#ccffff')",
+							// "true" : "color('#cce5ff')"
+						// }
+					// },
 	//              "show": false
 	//              "show" : "${Height} >= 0",
 					"meta" : {
@@ -302,6 +326,7 @@
 			}
 
 			var title = feature.getProperty('name');
+			title = title?title:feature.getProperty('full_id');
 			var tid = feature.getProperty('TARGET_FID');
 			infobox.name = (title!=' ')?(title):(tid);
 			infobox.description = {
@@ -312,9 +337,9 @@
 			viewer.entities.add(infobox);
 			viewer.selectedEntity = infobox;
 			// evaluate feature description
-			if (Cesium.defined(tileset.style.meta.description)) {
-				console.log("Description : " + tileset.style.meta.description.evaluate(feature));
-			}
+			// if (Cesium.defined(tileset.style.meta.description)) {
+				// console.log("Description : " + tileset.style.meta.description.evaluate(feature));
+			// }
 
 			feature.setProperty('clicked', true);
 			
@@ -471,7 +496,7 @@
 
 		// annotations.removeAll();
 	}
-	loadTileset(dataurl);
+	loadTileset(buildings);
 	///////////////////////////////////////////////////////////////////////////////
 	
 
