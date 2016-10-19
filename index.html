@@ -41,6 +41,7 @@
 		</select>
 		<button class="cesium-button" onclick="removeStyle()">去除样式</button>
 		<button class="cesium-button" onclick="showBox()">显示边框</button>
+		<button class="cesium-button" onclick="toggleShadows()">阴影效果</button>
 		<button class="cesium-button" data-toggle="modal" data-target="#myModal">声明样式</button>
 	</div>
 	
@@ -110,6 +111,9 @@
 	function showBox(){
 		tileset.debugShowBoundingVolume = !tileset.debugShowBoundingVolume;
 		tileset.debugShowContentBoundingVolume = !tileset.debugShowContentBoundingVolume;
+	}
+	function toggleShadows(){
+		viewer.shadows= !viewer.shadows;
 	}
     var osm = Cesium.createOpenStreetMapImageryProvider({
 		url : 'https://a.tile.openstreetmap.org/'
