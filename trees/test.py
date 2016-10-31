@@ -75,6 +75,7 @@ for grid in gridlow:
     batchTable['lon'] = lon
     batchTable['lat'] = lat
     batchTable['localX'] = localX
+    batchTable['localY'] = localY
     batchTable['globalX'] = globalX
     batchTable['globalY'] = globalY
 
@@ -91,8 +92,8 @@ for grid in gridlow:
         mkpath2=mkpath+'/gridmidID_'+'%d'%grid[0]
         mkdir(mkpath2)
         print('\tgridmidID_{0}:'.format(grid[0]))
-        centerX = grid[1].centroid.X
-        centerY = grid[1].centroid.Y
+        # centerX = grid[1].centroid.X
+        # centerY = grid[1].centroid.Y
         batchTable = {}
         full_id=[]
         leaf_cycle=[]
@@ -142,8 +143,8 @@ for grid in gridlow:
             mkpath3=mkpath2+'/gridhighID_'+'%d'%grid[0]
             mkdir(mkpath3)
             print('\t\tgridhighID_{0}:'.format(grid[0]))
-            centerX = grid[1].centroid.X
-            centerY = grid[1].centroid.Y
+            # centerX = grid[1].centroid.X
+            # centerY = grid[1].centroid.Y
             batchTable = {}
             full_id=[]
             leaf_cycle=[]
