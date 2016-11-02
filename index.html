@@ -38,7 +38,7 @@
 	<div id="toolbar">
 		<select class="cesium-button" onchange="loadTileset(this.value)">
 			<option value="buildings" selected = "selected">建筑物</option>
-			<option value="trees">树木</option>
+			<option value="trees">中北校区（建筑物+树木）</option>
 		</select>
 		<button class="cesium-button" onclick="removeStyle()">去除样式</button>
 		<button class="cesium-button" onclick="showBox()">显示边框</button>
@@ -153,20 +153,22 @@
 
 	//var dataurl = "./data/"
 	var buildings = "./buildings/"
-	var trees = "./tree/"
+	var trees = "./trees/"
+	var zb = "./zb/"
 	var tileset;
+	var tileset2;
 	
-	function loadTileset(url) {
+	function loadTileset(url,tilesetname) {
 		reset();
 
-		tileset = scene.primitives.add(new Cesium.Cesium3DTileset({
+		tilesetname = scene.primitives.add(new Cesium.Cesium3DTileset({
 			url : url,
 			debugShowStatistics : true//,
 			//maximumNumberOfLoadedTiles : 3
 		}));
 
-		return tileset.readyPromise.then(function(tileset) {
-			var boundingSphere = tileset.boundingSphere;
+		return tilesetname.readyPromise.then(function(tilesetname) {
+			var boundingSphere = tilesetname.boundingSphere;
 			viewer.camera.viewBoundingSphere(boundingSphere, new Cesium.HeadingPitchRange(0, -2.0, 0));
 			viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
 			// viewer.camera.setView({
@@ -176,9 +178,9 @@
 					// up : new Cesium.Cartesian3(0.27649053726026684, -0.6940744040291643, 0.6646906833084766)
 				// }
 			// });	
-			var properties = tileset.properties;
+			var properties = tilesetname.properties;
 			if (Cesium.defined(properties) && Cesium.defined(properties.height)) {
-				tileset.style = new Cesium.Cesium3DTileStyle({
+				tilesetname.style = new Cesium.Cesium3DTileStyle({
 	//              "color" : "color('#BAA5EC')",
 	//              "color" : "color('cyan', 0.5)",
 	//              "color" : "rgb(100, 255, 190)",
@@ -203,7 +205,7 @@
 				// addStyleUI();
 			}
 
-			tileset.loadProgress.addEventListener(function(numberOfPendingRequests, numberProcessing) {
+			tilesetname.loadProgress.addEventListener(function(numberOfPendingRequests, numberProcessing) {
 				if ((numberOfPendingRequests === 0) && (numberProcessing === 0)) {
 					//console.log('Stopped loading');
 					return;
@@ -212,7 +214,7 @@
 				//console.log('Loading: requests: ' + numberOfPendingRequests + ', processing: ' + numberProcessing);
 			});
 
-			tileset.tileUnload.addEventListener(function(tile) {
+			tilesetname.tileUnload.addEventListener(function(tile) {
 				//console.log('Tile unloaded.')
 			});
 		});
@@ -501,7 +503,8 @@
 
 		// annotations.removeAll();
 	}
-	loadTileset(buildings);
+	loadTileset(buildings,tileset);
+	loadTileset(zb,tileset2);
 	///////////////////////////////////////////////////////////////////////////////
 	
 

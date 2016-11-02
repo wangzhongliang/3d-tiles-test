@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-11-02T22:49:55</created>
+    <modified>2016-11-02T22:49:55</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="BUILDING_DEFAULT_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.7230553 0.7083759 0.6724433 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ROOF_DEFAULT_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.6038274 0.381326 0.2917707 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="CONCRETE_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.309469 0.3277781 0.309469 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="BUILDING_DEFAULT_0-material" name="BUILDING_DEFAULT_0">
+      <instance_effect url="#BUILDING_DEFAULT_0-effect"/>
+    </material>
+    <material id="ROOF_DEFAULT_0-material" name="ROOF_DEFAULT_0">
+      <instance_effect url="#ROOF_DEFAULT_0-effect"/>
+    </material>
+    <material id="CONCRETE_0-material" name="CONCRETE_0">
+      <instance_effect url="#CONCRETE_0-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Building3677-mesh" name="Building3677">
+      <mesh>
+        <source id="Building3677-mesh-positions">
+          <float_array id="Building3677-mesh-positions-array" count="258">-12.99094 6.781397 -2.800514 -12.99094 -5.818603 -2.800514 -18.95995 6.781397 -1.019514 -18.95995 -5.818603 -1.019514 -21.02495 6.781397 -0.3965139 -21.02495 -5.818603 -0.3965139 -19.34995 6.781397 5.169485 -19.34995 -5.818603 5.169485 -18.94994 6.781397 6.527487 -18.94994 -5.818603 6.527487 -10.92595 6.781397 4.123487 -10.92595 -5.818603 4.123487 -11.32594 6.781397 2.765486 -11.32594 -5.818603 2.765486 -12.26794 6.781397 -0.3745136 -12.26794 -5.818603 -0.3745136 -12.65794 6.781397 -1.676514 -12.65794 -5.818603 -1.676514 12.75806 4.181397 3.544485 12.75806 -5.818603 3.544485 20.31606 4.181397 1.284486 20.31606 -5.818603 1.284486 26.96906 4.181397 -0.7075138 26.96906 -5.818603 -0.7075138 25.86505 4.181397 -4.381514 25.86505 -5.818603 -4.381514 24.77106 4.181397 -8.043515 24.77106 -5.818603 -8.043515 20.92506 4.181397 -6.897514 20.92506 -5.818603 -6.897514 18.11707 4.181397 -6.051514 18.11707 -5.818603 -6.051514 17.32706 4.181397 -5.817514 17.32706 -5.818603 -5.817514 10.55905 4.181397 -3.791514 10.55905 -5.818603 -3.791514 14.10423 9.181397 -0.8553553 23.42432 9.181397 -3.64387 -20.23494 4.181397 15.68949 -20.23494 -5.818603 15.68949 20.93405 4.181397 3.355486 20.93405 -5.818603 3.355486 -5.004944 4.181397 0.8724861 -5.004944 -5.818603 0.8724861 -8.174942 4.181397 1.818486 -8.174942 -5.818603 1.818486 -11.32594 4.181397 2.765486 -13.97194 4.181397 3.555487 -13.97194 -5.818603 3.555487 -16.84694 4.181397 4.423487 -16.84694 -5.818603 4.423487 -19.34995 4.181397 5.169485 -23.05295 4.181397 6.282484 -23.05295 -5.818603 6.282484 -18.50838 9.181397 10.04633 16.38985 9.181397 -0.4088535 -15.00894 8.181397 0.1154861 -15.00894 -5.818603 0.1154861 -17.87494 8.181397 0.9724856 -17.87494 -5.818603 0.9724856 -16.84694 8.181397 4.423487 -16.69394 8.181397 4.935488 -16.69394 -5.818603 4.935488 -13.81894 8.181397 4.078485 -13.81894 -5.818603 4.078485 -13.97194 8.181397 3.555487 -11.32594 -2.518603 2.765486 -11.32594 -2.818603 2.765486 -8.174942 -2.518603 1.818486 -8.174942 -2.818603 1.818486 -9.116944 -2.518603 -1.320514 -9.116944 -2.818603 -1.320514 -12.26794 -2.518603 -0.3745136 -12.26794 -2.818603 -0.3745136 24.77106 -2.518603 -8.043515 24.77106 -2.818603 -8.043515 25.86505 -2.518603 -4.381514 25.86505 -2.818603 -4.381514 26.82706 -2.518603 -4.659514 26.82706 -2.818603 -4.659514 25.46506 -2.518603 -9.212514 25.46506 -2.818603 -9.212514 20.66806 -2.518603 -7.776514 20.66806 -2.818603 -7.776514 20.92506 -2.518603 -6.897514 20.92506 -2.818603 -6.897514</float_array>
+          <technique_common>
+            <accessor source="#Building3677-mesh-positions-array" count="86" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3677-mesh-normals">
+          <float_array id="Building3677-mesh-normals-array" count="354">-0.2859185 0 -0.958254 -0.2859185 0 -0.958254 -0.288836 0 -0.9573787 -0.288836 0 -0.9573786 -0.9575796 0 0.288169 -0.9592514 0 0.2825543 0.2869977 0 0.9579313 0.2869978 0 0.9579313 0.9592543 0 -0.2825444 0.9592543 0 -0.2825445 0.9578261 0 -0.2873483 0.9579479 0 -0.2869424 0.9579479 0 -0.2869424 0.9588086 0 -0.2840533 0 1 6.43385e-7 0 1 0 0 1 -2.77837e-7 0 1 0 0 1 1.0448e-6 0.2864871 0 0.9580841 0.2864872 0 0.9580841 0.2868326 0 0.9579808 0.9576968 0 -0.2877793 0.9576968 0 -0.2877792 0.9581574 0 -0.2862421 0.9581574 0 -0.286242 -0.2855649 0 -0.9583594 -0.2855648 0 -0.9583594 -0.2884737 0 -0.9574878 -0.288474 0 -0.9574878 -0.2840033 0 -0.9588233 -0.2840024 0 -0.9588236 -0.2867761 0 -0.9579977 -0.9578908 0 0.2871329 -0.9578908 0 0.2871329 0.2274366 0.6080737 0.7606044 0.2277116 0.6080701 0.7605249 0.227539 0.6081587 0.7605059 -0.8531275 0.454726 0.2557296 0.8531665 0.454293 -0.2563687 -0.2275488 0.6081133 -0.7605391 -0.2276715 0.6080489 -0.760554 -0.2257696 0.6066726 -0.7622181 -0.228869 0.6087273 -0.7596513 0.8535777 0.454291 -0.2549997 -0.2266584 0.6082842 -0.7606683 0.2869915 0 0.9579333 0.2869914 0 0.9579333 0.958246 0 -0.2859451 0.9582461 0 -0.2859451 0.9578913 0 -0.287131 0.9578914 0 -0.287131 -0.2867763 0 -0.9579977 -0.2870544 0 -0.9579143 -0.2859612 0 -0.9582412 -0.2878218 0 -0.9576841 -0.2878216 0 -0.957684 -0.2860859 0 -0.958204 -0.2890276 0 -0.9573208 -0.2890276 0 -0.9573208 -0.2856251 0 -0.9583415 -0.2856251 0 -0.9583415 -0.2878457 0 -0.9576769 -0.9579409 0 0.2869656 -0.957941 0 0.2869656 -0.2038825 0.7015078 -0.6828755 -0.8014658 0.5477307 0.2400911 -0.2053225 0.700851 -0.6831182 -0.2063725 0.7001225 -0.6835487 -0.2037104 0.7009506 -0.6834986 -0.2054531 0.7003281 -0.6836151 -0.2036397 0.7020539 -0.6823865 -0.2047123 0.7008458 -0.6833067 0.2047601 0.7006758 0.6834668 0.2047654 0.7006659 0.6834753 0.8013727 0.5482857 -0.2391334 -0.20473 0.7009506 -0.6831939 -0.2024375 0.7013663 -0.6834504 -0.204559 0.7008534 -0.6833449 0.8013265 0.5478868 -0.2402001 -0.2864891 0 -0.9580835 -0.9583826 0 0.2854873 -0.9583826 0 0.2854874 -0.9581351 0 0.2863169 -0.9581351 0 0.2863169 0.2856662 0 0.9583292 0.2856662 0 0.9583293 0.9597736 0 -0.2807754 0.9597736 0 -0.2807754 0.9574422 0 -0.288625 0.9574422 0 -0.288625 0 1 2.97442e-7 0.287822 0 0.957684 0.2878214 0 0.9576841 0.9578012 0 -0.2874318 0.9578011 0 -0.2874323 -0.2875432 0 -0.9577677 -0.2875428 0 -0.9577678 -0.9578263 0 0.2873479 -0.9578261 0 0.2873483 0 -1 0 0 -1 0 -0.9581575 0 0.2862418 -0.9581574 0 0.2862422 0.2776207 0 0.9606908 0.2776211 0 0.9606907 0.958052 0 -0.2865946 0.9580518 0 -0.2865952 -0.2867798 0 -0.9579966 -0.2867798 0 -0.9579966 -0.9598154 0 0.2806322 -0.9598152 0 0.280633 0.2855649 0 0.9583594 0.2855645 0 0.9583595 0 -1 -2.91929e-7 0 -1 1.24598e-7 0 1 -1.24598e-7 0 1 1.55116e-7</float_array>
+          <technique_common>
+            <accessor source="#Building3677-mesh-normals-array" count="118" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3677-mesh-vertices">
+          <input semantic="POSITION" source="#Building3677-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="96">
+          <input semantic="VERTEX" source="#Building3677-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3677-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 1 3 1 2 1 2 2 3 2 4 2 3 3 5 3 4 3 4 4 5 4 6 4 5 4 7 4 6 4 6 5 7 5 8 5 7 5 9 5 8 5 8 6 9 6 10 6 9 7 11 7 10 7 10 8 11 8 12 8 11 9 13 9 12 9 12 10 13 10 14 10 13 10 15 10 14 10 14 11 15 11 16 11 15 12 17 12 16 12 16 13 17 13 0 13 17 13 1 13 0 13 18 19 19 19 20 19 19 20 21 20 20 20 20 21 21 21 22 21 21 21 23 21 22 21 22 22 23 22 24 22 23 23 25 23 24 23 24 24 25 24 26 24 25 25 27 25 26 25 26 26 27 26 28 26 27 27 29 27 28 27 28 28 29 28 30 28 29 29 31 29 30 29 30 30 31 30 32 30 31 31 33 31 32 31 33 32 35 32 34 32 34 33 35 33 18 33 35 34 19 34 18 34 38 46 39 46 40 46 39 47 41 47 40 47 40 48 41 48 20 48 41 49 21 49 20 49 20 50 21 50 30 50 21 51 31 51 30 51 32 52 33 52 34 52 34 53 35 53 42 53 35 53 43 53 42 53 42 54 43 54 44 54 43 54 45 54 44 54 44 55 45 55 46 55 45 56 13 56 46 56 46 57 13 57 47 57 13 57 48 57 47 57 47 58 48 58 49 58 48 59 50 59 49 59 49 60 50 60 51 60 50 61 7 61 51 61 51 62 7 62 52 62 7 62 53 62 52 62 52 63 53 63 38 63 53 64 39 64 38 64 56 80 57 80 58 80 57 80 59 80 58 80 58 81 59 81 60 81 59 82 50 82 60 82 60 83 50 83 61 83 50 84 62 84 61 84 61 85 62 85 63 85 62 86 64 86 63 86 63 87 64 87 65 87 64 88 48 88 65 88 65 89 48 89 56 89 48 90 57 90 56 90 66 92 67 92 68 92 67 93 69 93 68 93 68 94 69 94 70 94 69 95 71 95 70 95 70 96 71 96 72 96 71 97 73 97 72 97 72 98 73 98 66 98 73 99 67 99 66 99 67 100 73 100 71 100 67 101 71 101 69 101 74 102 75 102 76 102 75 103 77 103 76 103 76 104 77 104 78 104 77 105 79 105 78 105 78 106 79 106 80 106 79 107 81 107 80 107 80 108 81 108 82 108 81 109 83 109 82 109 82 110 83 110 84 110 83 111 85 111 84 111 84 112 85 112 74 112 85 113 75 113 74 113 75 114 85 114 83 114 75 100 83 100 81 100 75 100 81 100 79 100 75 115 79 115 77 115</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="26">
+          <input semantic="VERTEX" source="#Building3677-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3677-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>36 35 18 35 20 35 37 36 20 36 22 36 36 37 20 37 37 37 34 38 18 38 36 38 24 39 37 39 22 39 32 40 36 40 37 40 34 41 36 41 32 41 30 42 32 42 37 42 28 43 30 43 37 43 26 44 37 44 24 44 28 45 37 45 26 45 46 65 47 65 54 65 52 66 38 66 54 66 51 67 52 67 54 67 47 68 49 68 54 68 51 69 54 69 49 69 46 70 54 70 44 70 42 71 44 71 54 71 42 72 54 72 55 72 54 73 38 73 55 73 38 74 40 74 55 74 20 75 55 75 40 75 34 76 42 76 55 76 30 77 32 77 55 77 34 78 55 78 32 78 20 79 30 79 55 79</p>
+        </polylist>
+        <polylist material="CONCRETE_0-material" count="17">
+          <input semantic="VERTEX" source="#Building3677-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3677-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>6 14 8 14 10 14 12 15 6 15 10 15 14 16 6 16 12 16 2 15 4 15 6 15 14 17 2 17 6 17 16 15 2 15 14 15 0 18 2 18 16 18 63 91 60 91 61 91 65 15 60 15 63 15 58 15 60 15 65 15 56 15 58 15 65 15 72 15 66 15 68 15 70 15 72 15 68 15 82 15 84 15 74 15 74 116 76 116 78 116 80 15 74 15 78 15 82 117 74 117 80 117</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3450-mesh" name="Building3450">
+      <mesh>
+        <source id="Building3450-mesh-positions">
+          <float_array id="Building3450-mesh-positions-array" count="51">3.107162 2.058775 -9.85212 3.107162 -5.441225 -9.85212 -2.361343 2.058775 -7.993118 -2.361343 -5.441225 -7.993118 -7.829849 2.058775 -6.134117 -7.829849 -5.441225 -6.134117 -2.128845 2.058775 10.61888 -2.128845 -5.441225 10.61888 3.340164 2.058775 8.759881 3.340164 -5.441225 8.759881 8.809159 2.058775 6.900879 8.809159 -5.441225 6.900879 3.107162 2.059185 -9.85212 -2.361343 7.058775 -7.993118 -7.829849 2.059185 -6.134117 -2.128845 2.058775 10.61888 3.340164 7.058775 8.759881</float_array>
+          <technique_common>
+            <accessor source="#Building3450-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3450-mesh-normals">
+          <float_array id="Building3450-mesh-normals-array" count="66">-0.3218578 0 -0.946788 -0.3218575 0 -0.9467882 -0.3218577 0 -0.9467881 -0.9466869 0 0.3221552 0.3218309 0 0.9467972 0.3218313 0 0.9467971 0.3218318 0 0.9467969 0.9466698 0 -0.3222054 -0.3220182 0 -0.9467335 -0.3218576 0 -0.9467881 -0.3218574 0 -0.9467881 -0.3219465 0 -0.9467579 -0.94663 0 0.3223225 -0.9726597 0 0.2322353 0 0 1 0.321831 0 0.9467972 0.3218318 0 0.946797 0.9466642 0 -0.3222221 -0.6195735 0.7560871 0.2108578 -0.6195732 0.7560874 0.2108578 0.6195734 0.7560871 -0.2108579 0.6195743 0.7560865 -0.2108577</float_array>
+          <technique_common>
+            <accessor source="#Building3450-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3450-mesh-vertices">
+          <input semantic="POSITION" source="#Building3450-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="22">
+          <input semantic="VERTEX" source="#Building3450-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3450-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 1 3 1 2 1 2 1 3 1 4 1 3 2 5 2 4 2 4 3 5 3 6 3 5 3 7 3 6 3 6 4 7 4 8 4 7 5 9 5 8 5 8 6 9 6 10 6 9 6 11 6 10 6 10 7 11 7 0 7 11 7 1 7 0 7 12 8 0 8 13 8 0 9 2 9 13 9 13 10 2 10 14 10 2 11 4 11 14 11 14 12 4 12 15 12 4 13 6 13 15 13 15 14 6 14 16 14 6 15 8 15 16 15 16 16 8 16 10 16 10 17 0 17 12 17</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="4">
+          <input semantic="VERTEX" source="#Building3450-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3450-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 </vcount>
+          <p>13 18 14 18 15 18 16 19 13 19 15 19 12 20 13 20 16 20 10 21 12 21 16 21</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3456-mesh" name="Building3456">
+      <mesh>
+        <source id="Building3456-mesh-positions">
+          <float_array id="Building3456-mesh-positions-array" count="30">9.999497 2 2.557751 9.999497 -5.5 2.557751 8.524491 2 -5.824249 8.524491 -5.5 -5.824249 -9.999497 2 -2.55225 -9.999497 -5.5 -2.55225 -8.524506 2 5.818748 -8.524506 -5.5 5.818748 -6.471741 7 1.141193 6.471725 7 -1.141239</float_array>
+          <technique_common>
+            <accessor source="#Building3456-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3456-mesh-normals">
+          <float_array id="Building3456-mesh-normals-array" count="36">0.9848673 0 -0.1733101 -0.1739431 0 -0.9847558 -0.1739431 0 -0.9847558 -0.9848288 0 0.1735293 0.1733757 0 0.9848558 0.1733757 0 0.9848558 0.1320911 0.6477208 0.7503399 0.132247 0.6481273 0.7499612 -0.8568242 0.4930102 0.1509745 0.856858 0.4930099 -0.1507839 -0.1323184 0.6476442 -0.7503659 -0.1324745 0.6480513 -0.7499868</float_array>
+          <technique_common>
+            <accessor source="#Building3456-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3456-mesh-vertices">
+          <input semantic="POSITION" source="#Building3456-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3456-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3456-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 2 5 2 4 2 4 3 5 3 6 3 5 3 7 3 6 3 6 4 7 4 0 4 7 5 1 5 0 5</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3456-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3456-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>8 6 6 6 0 6 9 7 8 7 0 7 4 8 6 8 8 8 2 9 9 9 0 9 4 10 8 10 9 10 2 11 4 11 9 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3423-mesh" name="Building3423">
+      <mesh>
+        <source id="Building3423-mesh-positions">
+          <float_array id="Building3423-mesh-positions-array" count="30">13.82176 2 1.850494 13.82176 -5.5 1.850494 12.35576 2 -6.4645 12.35576 -5.5 -6.4645 -13.82124 2 -1.845505 -13.82124 -5.5 -1.845505 -12.35625 2 6.459496 -12.35625 -5.5 6.459496 -10.32034 7 1.819038 10.32036 7 -1.819054</float_array>
+          <technique_common>
+            <accessor source="#Building3423-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3423-mesh-normals">
+          <float_array id="Building3423-mesh-normals-array" count="33">0.984811 0 -0.1736304 -0.173768 0 -0.9847867 -0.9847956 0 0.1737172 0.1733968 0 0.984852 0.1733968 0 0.984852 0.1325467 0.6447277 0.7528331 0.1326299 0.6451275 0.7524758 -0.8584281 0.4900729 0.1514261 0.8584415 0.4900728 -0.1513504 -0.1326301 0.6451268 -0.7524765 -0.1328305 0.644727 -0.7527836</float_array>
+          <technique_common>
+            <accessor source="#Building3423-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3423-mesh-vertices">
+          <input semantic="POSITION" source="#Building3423-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3423-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3423-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 0 3 7 4 1 4 0 4</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3423-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3423-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>8 5 6 5 0 5 9 6 8 6 0 6 4 7 6 7 8 7 2 8 9 8 0 8 8 9 9 9 2 9 4 10 8 10 2 10</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3417-mesh" name="Building3417">
+      <mesh>
+        <source id="Building3417-mesh-positions">
+          <float_array id="Building3417-mesh-positions-array" count="30">13.82149 2 1.845001 13.82149 -5.5 1.845001 12.3555 2 -6.458996 12.3555 -5.5 -6.458996 -13.8215 2 -1.850998 -13.8215 -5.5 -1.850998 -12.3555 2 6.465004 -12.3555 -5.5 6.465004 10.31648 7 -1.818386 -10.3165 7 1.818417</float_array>
+          <technique_common>
+            <accessor source="#Building3417-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3417-mesh-normals">
+          <float_array id="Building3417-mesh-normals-array" count="33">0.9847719 0 -0.1738517 -0.1733667 0 -0.9848574 -0.9848145 0 0.17361 0.1738048 0 0.9847801 0.1738048 0 0.9847801 0.1326262 0.6451703 0.7524397 0.1328628 0.6446985 0.7528024 -0.8581763 0.490557 0.1512853 0.8581385 0.4905584 -0.1514958 -0.1326259 0.6451724 -0.7524381 -0.1325276 0.6447005 -0.7528597</float_array>
+          <technique_common>
+            <accessor source="#Building3417-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3417-mesh-vertices">
+          <input semantic="POSITION" source="#Building3417-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3417-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3417-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 0 3 7 4 1 4 0 4</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3417-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3417-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>8 5 9 5 6 5 0 6 8 6 6 6 4 7 6 7 9 7 2 8 8 8 0 8 4 9 9 9 8 9 2 10 4 10 8 10</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3435-mesh" name="Building3435">
+      <mesh>
+        <source id="Building3435-mesh-positions">
+          <float_array id="Building3435-mesh-positions-array" count="30">9.999985 2 2.552246 9.999985 -5.5 2.552246 8.523987 2 -5.818756 8.523987 -5.5 -5.818756 -10.00002 2 -2.557754 -10.00002 -5.5 -2.557754 -8.524018 2 5.824242 -8.524018 -5.5 5.824242 6.468109 7 -1.140564 -6.468124 7 1.140594</float_array>
+          <technique_common>
+            <accessor source="#Building3435-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3435-mesh-normals">
+          <float_array id="Building3435-mesh-normals-array" count="30">0.9848085 0 -0.1736441 -0.1733759 0 -0.9848557 -0.9848475 0 0.1734232 0.1739428 0 0.9847558 0.1322466 0.6481309 0.7499582 0.1325226 0.6477245 0.7502605 -0.85657 0.4934946 0.1508346 0.8565367 0.4934936 -0.1510269 -0.132246 0.6481348 -0.7499549 -0.1320901 0.6477285 -0.7503333</float_array>
+          <technique_common>
+            <accessor source="#Building3435-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3435-mesh-vertices">
+          <input semantic="POSITION" source="#Building3435-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3435-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3435-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 0 3 7 3 1 3 0 3</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3435-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3435-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>8 4 9 4 6 4 0 5 8 5 6 5 4 6 6 6 9 6 2 7 8 7 0 7 4 8 9 8 8 8 2 9 4 9 8 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3432-mesh" name="Building3432">
+      <mesh>
+        <source id="Building3432-mesh-positions">
+          <float_array id="Building3432-mesh-positions-array" count="30">9.999985 2 2.554497 9.999985 -5.5 2.554497 8.523987 2 -5.816502 8.523987 -5.5 -5.816502 -10.00002 2 -2.554504 -10.00002 -5.5 -2.554504 -8.524003 2 5.816498 -8.524003 -5.5 5.816498 6.471558 7 -1.139618 -6.471573 7 1.13961</float_array>
+          <technique_common>
+            <accessor source="#Building3432-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3432-mesh-normals">
+          <float_array id="Building3432-mesh-normals-array" count="33">0.9848085 0 -0.1736442 0.9848085 0 -0.1736441 -0.1734272 0 -0.9848468 -0.9848083 0 0.1736459 0.1734276 0 0.9848467 0.1321401 0.6476547 0.7503883 0.1321405 0.647654 0.7503888 -0.8568022 0.4930177 0.1510752 0.8568031 0.4930165 -0.1510739 -0.1321401 0.6476543 -0.7503885 -0.1321402 0.6476542 -0.7503887</float_array>
+          <technique_common>
+            <accessor source="#Building3432-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3432-mesh-vertices">
+          <input semantic="POSITION" source="#Building3432-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3432-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3432-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 1 3 1 2 1 2 2 3 2 4 2 3 2 5 2 4 2 4 3 5 3 6 3 5 3 7 3 6 3 6 4 7 4 0 4 7 4 1 4 0 4</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3432-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3432-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>8 5 9 5 6 5 0 6 8 6 6 6 4 7 6 7 9 7 2 8 8 8 0 8 9 9 8 9 2 9 4 10 9 10 2 10</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3428-mesh" name="Building3428">
+      <mesh>
+        <source id="Building3428-mesh-positions">
+          <float_array id="Building3428-mesh-positions-array" count="30">20.16573 2 0.08898925 20.16573 -5.5 0.08898925 18.43372 2 -8.171013 18.43372 -5.5 -8.171013 -20.16628 2 -0.08901214 -20.16628 -5.5 -0.08901214 -18.43327 2 8.17099 -18.43327 -5.5 8.17099 16.54616 7 -3.46447 -16.54622 7 3.464439</float_array>
+          <technique_common>
+            <accessor source="#Building3428-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3428-mesh-normals">
+          <float_array id="Building3428-mesh-normals-array" count="30">0.9787153 0 -0.2052232 -0.2049344 0 -0.9787758 -0.9786916 0 0.2053358 0.2049394 0 0.9787747 0.1566132 0.6449761 0.7479827 -0.8529476 0.4903631 0.1789538 0.1566168 0.6449673 0.7479896 0.8529678 0.490364 -0.1788557 -0.1566149 0.6449663 -0.7479909 -0.1566118 0.6449742 -0.7479846</float_array>
+          <technique_common>
+            <accessor source="#Building3428-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3428-mesh-vertices">
+          <input semantic="POSITION" source="#Building3428-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="8">
+          <input semantic="VERTEX" source="#Building3428-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3428-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 0 3 7 3 1 3 0 3</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="6">
+          <input semantic="VERTEX" source="#Building3428-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3428-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 </vcount>
+          <p>6 4 8 4 9 4 4 5 6 5 9 5 0 6 8 6 6 6 2 7 8 7 0 7 9 8 8 8 2 8 4 9 9 9 2 9</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3401-mesh" name="Building3401">
+      <mesh>
+        <source id="Building3401-mesh-positions">
+          <float_array id="Building3401-mesh-positions-array" count="30">19.87338 3.75 -0.01319885 19.87338 -3.75 -0.01319885 17.03737 3.75 -9.765198 17.03737 -3.75 -9.765198 -13.50963 3.75 -0.8921967 -13.50963 -3.75 -0.8921967 -12.72862 3.75 1.800796 -12.72862 -3.75 1.800796 -10.67262 3.75 8.869797 -10.67262 -3.75 8.869797</float_array>
+          <technique_common>
+            <accessor source="#Building3401-mesh-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3401-mesh-normals">
+          <float_array id="Building3401-mesh-normals-array" count="21">0.9602199 0 -0.279245 -0.2789412 0 -0.9603083 -0.9604256 0 0.2785369 -0.9602112 0 0.2792748 0.2792392 0 0.9602216 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Building3401-mesh-normals-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3401-mesh-vertices">
+          <input semantic="POSITION" source="#Building3401-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="10">
+          <input semantic="VERTEX" source="#Building3401-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3401-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 8 3 7 3 9 3 8 3 8 4 9 4 0 4 9 4 1 4 0 4</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="3">
+          <input semantic="VERTEX" source="#Building3401-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3401-mesh-normals" offset="1"/>
+          <vcount>3 3 3 </vcount>
+          <p>0 5 6 5 8 5 2 6 6 6 0 6 4 6 6 6 2 6</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="model_gridID_53_w296131133" name="model_gridID_53_w296131133" type="NODE">
+        <matrix sid="transform">1 0 0 218.0499 0 -1.62921e-7 -1 -13.74352 0 1 -1.62921e-7 5.8186 0 0 0 1</matrix>
+        <instance_geometry url="#Building3677-mesh" name="model_gridID_53_w296131133">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+              <instance_material symbol="CONCRETE_0-material" target="#CONCRETE_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378536" name="model_gridID_53_w376378536" type="NODE">
+        <matrix sid="transform">1 0 0 179.8008 0 -1.62921e-7 -1 -97.93911 0 1 -1.62921e-7 5.441209 0 0 0 1</matrix>
+        <instance_geometry url="#Building3450-mesh" name="model_gridID_53_w376378536">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378558" name="model_gridID_53_w376378558" type="NODE">
+        <matrix sid="transform">1 0 0 190.7375 0 -1.62921e-7 -1 -50.08526 0 1 -1.62921e-7 5.499992 0 0 0 1</matrix>
+        <instance_geometry url="#Building3456-mesh" name="model_gridID_53_w376378558">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378561" name="model_gridID_53_w376378561" type="NODE">
+        <matrix sid="transform">1 0 0 226.0672 0 -1.62921e-7 -1 -80.4475 0 1 -1.62921e-7 5.499987 0 0 0 1</matrix>
+        <instance_geometry url="#Building3423-mesh" name="model_gridID_53_w376378561">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378567" name="model_gridID_53_w376378567" type="NODE">
+        <matrix sid="transform">1 0 0 221.1365 0 -1.62921e-7 -1 -53.859 0 1 -1.62921e-7 5.499991 0 0 0 1</matrix>
+        <instance_geometry url="#Building3417-mesh" name="model_gridID_53_w376378567">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378583" name="model_gridID_53_w376378583" type="NODE">
+        <matrix sid="transform">1 0 0 197.039 0 -1.62921e-7 -1 -80.80376 0 1 -1.62921e-7 5.499987 0 0 0 1</matrix>
+        <instance_geometry url="#Building3435-mesh" name="model_gridID_53_w376378583">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378585" name="model_gridID_53_w376378585" type="NODE">
+        <matrix sid="transform">1 0 0 194.402 0 -1.62921e-7 -1 -65.0715 0 1 -1.62921e-7 5.49999 0 0 0 1</matrix>
+        <instance_geometry url="#Building3432-mesh" name="model_gridID_53_w376378585">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378588" name="model_gridID_53_w376378588" type="NODE">
+        <matrix sid="transform">1 0 0 223.7683 0 -1.62921e-7 -1 -108.035 0 1 -1.62921e-7 5.499982 0 0 0 1</matrix>
+        <instance_geometry url="#Building3428-mesh" name="model_gridID_53_w376378588">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_53_w376378596" name="model_gridID_53_w376378596" type="NODE">
+        <matrix sid="transform">1 0 0 154.2956 0 -1.62921e-7 -1 -74.4412 0 1 -1.62921e-7 3.749988 0 0 0 1</matrix>
+        <instance_geometry url="#Building3401-mesh" name="model_gridID_53_w376378596">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

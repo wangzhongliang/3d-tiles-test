@@ -1,0 +1,14 @@
+{
+	"width": 1231.4939575195312,
+	"centerLon": 121.40319999999997,
+	"depth": 1610.6470947265625,
+	"height": 200.0,
+	"centerLat": 31.228350000000006,
+	"properties":{
+		"building":{"minimum": null,"maximum": null},
+		"full_id":{"minimum": null,"maximum": null},
+		"name":{"minimum": null,"maximum": null},
+		"int_name":{"minimum": null,"maximum": null},
+		"gridID":{"minimum": 0,"maximum": 121}
+	}
+}

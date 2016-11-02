@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2016-11-02T22:49:57</created>
+    <modified>2016-11-02T22:49:57</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="MAT_3_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.3921569 0.3921569 0.3921569 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="BUILDING_DEFAULT_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.7230553 0.7083759 0.6724433 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ROOF_DEFAULT_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.6038274 0.381326 0.2917707 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="CONCRETE_0-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.309469 0.3277781 0.309469 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="MAT_3_0-material" name="MAT_3_0">
+      <instance_effect url="#MAT_3_0-effect"/>
+    </material>
+    <material id="BUILDING_DEFAULT_0-material" name="BUILDING_DEFAULT_0">
+      <instance_effect url="#BUILDING_DEFAULT_0-effect"/>
+    </material>
+    <material id="ROOF_DEFAULT_0-material" name="ROOF_DEFAULT_0">
+      <instance_effect url="#ROOF_DEFAULT_0-effect"/>
+    </material>
+    <material id="CONCRETE_0-material" name="CONCRETE_0">
+      <instance_effect url="#CONCRETE_0-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Flagpole398-mesh" name="Flagpole398">
+      <mesh>
+        <source id="Flagpole398-mesh-positions">
+          <float_array id="Flagpole398-mesh-positions-array" count="105">0 4.857143 0.008636474 0 4.857143 -0.1413574 -0.05740356 4.857143 -0.1299438 -0.1060485 4.857143 -0.09744262 -0.1385803 4.857143 -0.04876708 -0.1499938 4.857143 0.008636474 -0.1385803 4.857143 0.06604003 -0.1060485 4.857143 0.114685 -0.05740356 4.857143 0.1472167 0 4.857143 0.1586303 0.05740356 4.857143 0.1472167 0.1060791 4.857143 0.114685 0.1385803 4.857143 0.06604003 0.1499938 4.857143 0.008636474 0.1385803 4.857143 -0.04876708 0.1060791 4.857143 -0.09744262 0.05740356 4.857143 -0.1299438 0 4.857143 -0.1413574 0 -5.142857 -0.1413574 -0.05740356 -5.142857 -0.1299438 -0.1060485 -5.142857 -0.09744262 -0.1385803 -5.142857 -0.04876708 -0.1499938 -5.142857 0.008636474 -0.1385803 -5.142857 0.06604003 -0.1060485 -5.142857 0.114685 -0.05740356 -5.142857 0.1472167 0 -5.142857 0.1586303 0.05740356 -5.142857 0.1472167 0.1060791 -5.142857 0.114685 0.1385803 -5.142857 0.06604003 0.1499938 -5.142857 0.008636474 0.1385803 -5.142857 -0.04876708 0.1060791 -5.142857 -0.09744262 0.05740356 -5.142857 -0.1299438 0 -5.142857 -0.1413574</float_array>
+          <technique_common>
+            <accessor source="#Flagpole398-mesh-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Flagpole398-mesh-normals">
+          <float_array id="Flagpole398-mesh-normals-array" count="111">0 1 0 0 1 -3.4626e-6 0 1 1.03806e-5 0 1 -6.05725e-6 0 1 6.05725e-6 0 1 -1.03857e-5 0 1 3.46189e-6 0 1 3.46019e-6 0 1 -1.38504e-5 0 1 1.38436e-5 0 1 -3.4609e-6 -0.195013 0 -0.9808007 -0.195013 0 -0.9808008 -0.5555426 0 -0.8314881 -0.5555426 0 -0.8314882 -0.8314082 0 -0.5556621 -0.8314082 0 -0.5556622 -0.9808007 0 -0.1950129 -0.9808007 0 0.1950129 -0.8312472 0 0.555903 -0.8312472 0 0.5559031 -0.5559031 0 0.8312472 -0.195013 0 0.9808007 -0.195013 0 0.9808008 0.195013 0 0.9808007 0.195013 0 0.9808008 0.5556622 0 0.8314083 0.5556622 0 0.8314082 0.8314882 0 0.5555426 0.8314882 0 0.5555425 0.9808007 0 0.1950129 0.9808007 0 -0.1950129 0.831649 0 -0.5553017 0.5553017 0 -0.8316491 0.5553017 0 -0.831649 0.195013 0 -0.9808007 0.195013 0 -0.9808008</float_array>
+          <technique_common>
+            <accessor source="#Flagpole398-mesh-normals-array" count="37" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Flagpole398-mesh-vertices">
+          <input semantic="POSITION" source="#Flagpole398-mesh-positions"/>
+        </vertices>
+        <polylist material="MAT_3_0-material" count="48">
+          <input semantic="VERTEX" source="#Flagpole398-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Flagpole398-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 0 2 3 2 4 2 0 3 4 3 5 3 0 4 5 4 6 4 0 5 6 5 7 5 0 6 7 6 8 6 0 0 8 0 9 0 0 0 9 0 10 0 0 7 10 7 11 7 0 8 11 8 12 8 0 4 12 4 13 4 0 3 13 3 14 3 0 9 14 9 15 9 0 10 15 10 16 10 0 0 16 0 17 0 1 11 18 11 2 11 18 12 19 12 2 12 2 13 19 13 3 13 19 14 20 14 3 14 3 15 20 15 4 15 20 16 21 16 4 16 4 17 21 17 5 17 21 17 22 17 5 17 5 18 22 18 6 18 22 18 23 18 6 18 6 19 23 19 7 19 23 20 24 20 7 20 7 21 24 21 8 21 24 21 25 21 8 21 8 22 25 22 9 22 25 23 26 23 9 23 9 24 26 24 10 24 26 25 27 25 10 25 10 26 27 26 11 26 27 27 28 27 11 27 11 28 28 28 12 28 28 29 29 29 12 29 12 30 29 30 13 30 29 30 30 30 13 30 13 31 30 31 14 31 30 31 31 31 14 31 14 32 31 32 15 32 31 32 32 32 15 32 15 33 32 33 16 33 32 34 33 34 16 34 16 35 33 35 17 35 33 36 34 36 17 36</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Flagpole399-mesh" name="Flagpole399">
+      <mesh>
+        <source id="Flagpole399-mesh-positions">
+          <float_array id="Flagpole399-mesh-positions-array" count="105">0 4.857143 0.008605957 0 4.857143 -0.1414184 -0.05740356 4.857143 -0.1300048 -0.1060791 4.857143 -0.09747314 -0.1385803 4.857143 -0.0487976 -0.1499938 4.857143 0.008605957 -0.1385803 4.857143 0.065979 -0.1060791 4.857143 0.1146545 -0.05740356 4.857143 0.1471862 0 4.857143 0.1585998 0.05740356 4.857143 0.1471862 0.1060485 4.857143 0.1146545 0.1385803 4.857143 0.065979 0.1499938 4.857143 0.008605957 0.1385803 4.857143 -0.0487976 0.1060485 4.857143 -0.09747314 0.05740356 4.857143 -0.1300048 0 4.857143 -0.1414184 0 -5.142857 -0.1414184 -0.05740356 -5.142857 -0.1300048 -0.1060791 -5.142857 -0.09747314 -0.1385803 -5.142857 -0.0487976 -0.1499938 -5.142857 0.008605957 -0.1385803 -5.142857 0.065979 -0.1060791 -5.142857 0.1146545 -0.05740356 -5.142857 0.1471862 0 -5.142857 0.1585998 0.05740356 -5.142857 0.1471862 0.1060485 -5.142857 0.1146545 0.1385803 -5.142857 0.065979 0.1499938 -5.142857 0.008605957 0.1385803 -5.142857 -0.0487976 0.1060485 -5.142857 -0.09747314 0.05740356 -5.142857 -0.1300048 0 -5.142857 -0.1414184</float_array>
+          <technique_common>
+            <accessor source="#Flagpole399-mesh-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Flagpole399-mesh-normals">
+          <float_array id="Flagpole399-mesh-normals-array" count="105">0 1 0 0 1 -3.4596e-6 0 1 1.38436e-5 0 1 -6.05725e-6 0 1 6.06047e-6 0 1 -1.38452e-5 0 1 3.46019e-6 0 1 3.46189e-6 0 1 -1.03818e-5 0 1 1.03806e-5 0 1 -3.4613e-6 -0.195013 0 -0.9808007 -0.195013 0 -0.9808008 -0.5556622 0 -0.8314083 -0.5556622 0 -0.8314082 -0.831649 0 -0.5553017 -0.9808007 0 -0.1950129 -0.9807808 0 0.1951128 -0.831649 0 0.5553017 -0.5556622 0 0.8314083 -0.5556622 0 0.8314082 -0.195013 0 0.9808007 -0.195013 0 0.9808008 0.195013 0 0.9808007 0.195013 0 0.9808008 0.5559031 0 0.8312472 0.8314082 0 0.5556621 0.8314082 0 0.5556622 0.9807808 0 0.1951128 0.9808007 0 -0.1950129 0.8314082 0 -0.5556621 0.8314082 0 -0.5556622 0.5559031 0 -0.8312472 0.195013 0 -0.9808007 0.195013 0 -0.9808008</float_array>
+          <technique_common>
+            <accessor source="#Flagpole399-mesh-normals-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Flagpole399-mesh-vertices">
+          <input semantic="POSITION" source="#Flagpole399-mesh-positions"/>
+        </vertices>
+        <polylist material="MAT_3_0-material" count="48">
+          <input semantic="VERTEX" source="#Flagpole399-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Flagpole399-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 0 2 3 2 4 2 0 3 4 3 5 3 0 4 5 4 6 4 0 5 6 5 7 5 0 6 7 6 8 6 0 0 8 0 9 0 0 0 9 0 10 0 0 7 10 7 11 7 0 8 11 8 12 8 0 4 12 4 13 4 0 3 13 3 14 3 0 9 14 9 15 9 0 10 15 10 16 10 0 0 16 0 17 0 1 11 18 11 2 11 18 12 19 12 2 12 2 13 19 13 3 13 19 14 20 14 3 14 3 15 20 15 4 15 20 15 21 15 4 15 4 16 21 16 5 16 21 16 22 16 5 16 5 17 22 17 6 17 22 17 23 17 6 17 6 18 23 18 7 18 23 18 24 18 7 18 7 19 24 19 8 19 24 20 25 20 8 20 8 21 25 21 9 21 25 22 26 22 9 22 9 23 26 23 10 23 26 24 27 24 10 24 10 25 27 25 11 25 27 25 28 25 11 25 11 26 28 26 12 26 28 27 29 27 12 27 12 28 29 28 13 28 29 28 30 28 13 28 13 29 30 29 14 29 30 29 31 29 14 29 14 30 31 30 15 30 31 31 32 31 15 31 15 32 32 32 16 32 32 32 33 32 16 32 16 33 33 33 17 33 33 34 34 34 17 34</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Flagpole400-mesh" name="Flagpole400">
+      <mesh>
+        <source id="Flagpole400-mesh-positions">
+          <float_array id="Flagpole400-mesh-positions-array" count="105">-3.05176e-5 4.857143 0.008575439 -3.05176e-5 4.857143 -0.1414184 -0.05743408 4.857143 -0.1300048 -0.1060791 4.857143 -0.09750366 -0.1386108 4.857143 -0.04882812 -0.1500244 4.857143 0.008575439 -0.1386108 4.857143 0.065979 -0.1060791 4.857143 0.1146545 -0.05743408 4.857143 0.1471557 -3.05176e-5 4.857143 0.1585693 0.05737304 4.857143 0.1471557 0.1060485 4.857143 0.1146545 0.1385498 4.857143 0.065979 0.1499938 4.857143 0.008575439 0.1385498 4.857143 -0.04882812 0.1060485 4.857143 -0.09750366 0.05737304 4.857143 -0.1300048 -3.05176e-5 4.857143 -0.1414184 -3.05176e-5 -5.142857 -0.1414184 -0.05743408 -5.142857 -0.1300048 -0.1060791 -5.142857 -0.09750366 -0.1386108 -5.142857 -0.04882812 -0.1500244 -5.142857 0.008575439 -0.1386108 -5.142857 0.065979 -0.1060791 -5.142857 0.1146545 -0.05743408 -5.142857 0.1471557 -3.05176e-5 -5.142857 0.1585693 0.05737304 -5.142857 0.1471557 0.1060485 -5.142857 0.1146545 0.1385498 -5.142857 0.065979 0.1499938 -5.142857 0.008575439 0.1385498 -5.142857 -0.04882812 0.1060485 -5.142857 -0.09750366 0.05737304 -5.142857 -0.1300048 -3.05176e-5 -5.142857 -0.1414184</float_array>
+          <technique_common>
+            <accessor source="#Flagpole400-mesh-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Flagpole400-mesh-normals">
+          <float_array id="Flagpole400-mesh-normals-array" count="117">0 1 0 0 1 -3.4626e-6 0 1 1.03806e-5 0 1 -6.05725e-6 0 1 6.05725e-6 0 1 -1.03806e-5 0 1 3.4626e-6 0 1 3.4609e-6 0 1 -1.38436e-5 0 1 7.78631e-6 0 1 -7.78631e-6 0 1 1.38436e-5 0 1 -3.4609e-6 -0.195013 0 -0.9808007 -0.195013 0 -0.9808008 -0.5555426 0 -0.8314881 -0.5555426 0 -0.8314882 -0.8314082 0 -0.5556621 -0.8314082 0 -0.5556622 -0.9808007 0 -0.1950129 -0.9808007 0 0.1950129 -0.8314082 0 0.5556621 -0.8314082 0 0.5556622 -0.5555426 0 0.8314881 -0.5555426 0 0.8314882 -0.195013 0 0.9808007 -0.195013 0 0.9808008 0.195013 0 0.9808007 0.195013 0 0.9808008 0.5553017 0 0.8316491 0.5553017 0 0.831649 0.831649 0 0.5553017 0.9807008 0 0.1955145 0.9807008 0 -0.1955145 0.831649 0 -0.5553017 0.5553017 0 -0.8316491 0.5553017 0 -0.831649 0.195013 0 -0.9808007 0.195013 0 -0.9808008</float_array>
+          <technique_common>
+            <accessor source="#Flagpole400-mesh-normals-array" count="39" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Flagpole400-mesh-vertices">
+          <input semantic="POSITION" source="#Flagpole400-mesh-positions"/>
+        </vertices>
+        <polylist material="MAT_3_0-material" count="48">
+          <input semantic="VERTEX" source="#Flagpole400-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Flagpole400-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 0 2 3 2 4 2 0 3 4 3 5 3 0 4 5 4 6 4 0 5 6 5 7 5 0 6 7 6 8 6 0 0 8 0 9 0 0 0 9 0 10 0 0 7 10 7 11 7 0 8 11 8 12 8 0 9 12 9 13 9 0 10 13 10 14 10 0 11 14 11 15 11 0 12 15 12 16 12 0 0 16 0 17 0 1 13 18 13 2 13 18 14 19 14 2 14 2 15 19 15 3 15 19 16 20 16 3 16 3 17 20 17 4 17 20 18 21 18 4 18 4 19 21 19 5 19 21 19 22 19 5 19 5 20 22 20 6 20 22 20 23 20 6 20 6 21 23 21 7 21 23 22 24 22 7 22 7 23 24 23 8 23 24 24 25 24 8 24 8 25 25 25 9 25 25 26 26 26 9 26 9 27 26 27 10 27 26 28 27 28 10 28 10 29 27 29 11 29 27 30 28 30 11 30 11 31 28 31 12 31 28 31 29 31 12 31 12 32 29 32 13 32 29 32 30 32 13 32 13 33 30 33 14 33 30 33 31 33 14 33 14 34 31 34 15 34 31 34 32 34 15 34 15 35 32 35 16 35 32 36 33 36 16 36 16 37 33 37 17 37 33 38 34 38 17 38</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Flagpole401-mesh" name="Flagpole401">
+      <mesh>
+        <source id="Flagpole401-mesh-positions">
+          <float_array id="Flagpole401-mesh-positions-array" count="105">6.10352e-5 4.857143 0.008544921 6.10352e-5 4.857143 -0.1414489 -0.05734252 4.857143 -0.1300354 -0.106018 4.857143 -0.09753417 -0.1385192 4.857143 -0.04885864 -0.1499328 4.857143 0.008544921 -0.1385192 4.857143 0.06594848 -0.106018 4.857143 0.1145935 -0.05734252 4.857143 0.1471252 6.10352e-5 4.857143 0.1585388 0.05746459 4.857143 0.1471252 0.1061401 4.857143 0.1145935 0.1386413 4.857143 0.06594848 0.1500549 4.857143 0.008544921 0.1386413 4.857143 -0.04885864 0.1061401 4.857143 -0.09753417 0.05746459 4.857143 -0.1300354 6.10352e-5 4.857143 -0.1414489 6.10352e-5 -5.142857 -0.1414489 -0.05734252 -5.142857 -0.1300354 -0.106018 -5.142857 -0.09753417 -0.1385192 -5.142857 -0.04885864 -0.1499328 -5.142857 0.008544921 -0.1385192 -5.142857 0.06594848 -0.106018 -5.142857 0.1145935 -0.05734252 -5.142857 0.1471252 6.10352e-5 -5.142857 0.1585388 0.05746459 -5.142857 0.1471252 0.1061401 -5.142857 0.1145935 0.1386413 -5.142857 0.06594848 0.1500549 -5.142857 0.008544921 0.1386413 -5.142857 -0.04885864 0.1061401 -5.142857 -0.09753417 0.05746459 -5.142857 -0.1300354 6.10352e-5 -5.142857 -0.1414489</float_array>
+          <technique_common>
+            <accessor source="#Flagpole401-mesh-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Flagpole401-mesh-normals">
+          <float_array id="Flagpole401-mesh-normals-array" count="75">0 1 0 0 1 -3.4609e-6 0 1 1.38436e-5 0 1 -6.05725e-6 0 1 6.05725e-6 0 1 -1.38504e-5 0 1 3.46019e-6 -0.195013 0 -0.9808007 -0.5553017 0 -0.831649 -0.831649 0 -0.5553017 -0.9808007 0 -0.195013 -0.9808007 0 0.195013 -0.8314882 0 0.5555426 -0.5556622 0 0.8314082 -0.5556621 0 0.8314082 -0.195013 0 0.9808007 0.195013 0 0.9808007 0.5556622 0 0.8314082 0.5556621 0 0.8314082 0.8314882 0 0.5555426 0.9808007 0 0.195013 0.9808007 0 -0.195013 0.831649 0 -0.5553017 0.5553017 0 -0.831649 0.195013 0 -0.9808007</float_array>
+          <technique_common>
+            <accessor source="#Flagpole401-mesh-normals-array" count="25" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Flagpole401-mesh-vertices">
+          <input semantic="POSITION" source="#Flagpole401-mesh-positions"/>
+        </vertices>
+        <polylist material="MAT_3_0-material" count="48">
+          <input semantic="VERTEX" source="#Flagpole401-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Flagpole401-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 0 2 3 2 4 2 0 3 4 3 5 3 0 4 5 4 6 4 0 5 6 5 7 5 0 6 7 6 8 6 0 0 8 0 9 0 0 0 9 0 10 0 0 6 10 6 11 6 0 5 11 5 12 5 0 4 12 4 13 4 0 3 13 3 14 3 0 2 14 2 15 2 0 1 15 1 16 1 0 0 16 0 17 0 1 7 18 7 2 7 18 7 19 7 2 7 2 8 19 8 3 8 19 8 20 8 3 8 3 9 20 9 4 9 20 9 21 9 4 9 4 10 21 10 5 10 21 10 22 10 5 10 5 11 22 11 6 11 22 11 23 11 6 11 6 12 23 12 7 12 23 12 24 12 7 12 7 13 24 13 8 13 24 14 25 14 8 14 8 15 25 15 9 15 25 15 26 15 9 15 9 16 26 16 10 16 26 16 27 16 10 16 10 17 27 17 11 17 27 18 28 18 11 18 11 19 28 19 12 19 28 19 29 19 12 19 12 20 29 20 13 20 29 20 30 20 13 20 13 21 30 21 14 21 30 21 31 21 14 21 14 22 31 22 15 22 31 22 32 22 15 22 15 23 32 23 16 23 32 23 33 23 16 23 16 24 33 24 17 24 33 24 34 24 17 24</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Flagpole397-mesh" name="Flagpole397">
+      <mesh>
+        <source id="Flagpole397-mesh-positions">
+          <float_array id="Flagpole397-mesh-positions-array" count="105">3.05176e-5 4.857143 0.008575439 3.05176e-5 4.857143 -0.1414184 -0.05737304 4.857143 -0.1300048 -0.1060485 4.857143 -0.09750366 -0.1385498 4.857143 -0.04882812 -0.1499633 4.857143 0.008575439 -0.1385498 4.857143 0.065979 -0.1060485 4.857143 0.114624 -0.05737304 4.857143 0.1471557 3.05176e-5 4.857143 0.1585693 0.05743408 4.857143 0.1471557 0.1060791 4.857143 0.114624 0.1386108 4.857143 0.065979 0.1500244 4.857143 0.008575439 0.1386108 4.857143 -0.04882812 0.1060791 4.857143 -0.09750366 0.05743408 4.857143 -0.1300048 3.05176e-5 4.857143 -0.1414184 3.05176e-5 -5.142857 -0.1414184 -0.05737304 -5.142857 -0.1300048 -0.1060485 -5.142857 -0.09750366 -0.1385498 -5.142857 -0.04882812 -0.1499633 -5.142857 0.008575439 -0.1385498 -5.142857 0.065979 -0.1060485 -5.142857 0.114624 -0.05737304 -5.142857 0.1471557 3.05176e-5 -5.142857 0.1585693 0.05743408 -5.142857 0.1471557 0.1060791 -5.142857 0.114624 0.1386108 -5.142857 0.065979 0.1500244 -5.142857 0.008575439 0.1386108 -5.142857 -0.04882812 0.1060791 -5.142857 -0.09750366 0.05743408 -5.142857 -0.1300048 3.05176e-5 -5.142857 -0.1414184</float_array>
+          <technique_common>
+            <accessor source="#Flagpole397-mesh-positions-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Flagpole397-mesh-normals">
+          <float_array id="Flagpole397-mesh-normals-array" count="87">0 1 0 0 1 -3.4609e-6 0 1 1.38436e-5 0 1 -6.05725e-6 0 1 6.05725e-6 0 1 -1.38504e-5 0 1 3.46019e-6 0 1 3.46189e-6 0 1 -1.03857e-5 0 1 1.03806e-5 0 1 -3.4626e-6 -0.195013 0 -0.9808007 -0.5553017 0 -0.831649 -0.831649 0 -0.5553017 -0.9808007 0 -0.195013 -0.9808007 0 0.195013 -0.8314882 0 0.5555426 -0.5556622 0 0.8314082 -0.5556621 0 0.8314082 -0.195013 0 0.9808007 0.195013 0 0.9808007 0.5559031 0 0.8312472 0.8312472 0 0.5559031 0.9808007 0 0.195013 0.9808007 0 -0.195013 0.8314082 0 -0.5556622 0.5555426 0 -0.8314882 0.5555426 0 -0.8314881 0.195013 0 -0.9808007</float_array>
+          <technique_common>
+            <accessor source="#Flagpole397-mesh-normals-array" count="29" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Flagpole397-mesh-vertices">
+          <input semantic="POSITION" source="#Flagpole397-mesh-positions"/>
+        </vertices>
+        <polylist material="MAT_3_0-material" count="48">
+          <input semantic="VERTEX" source="#Flagpole397-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Flagpole397-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 0 1 2 1 3 1 0 2 3 2 4 2 0 3 4 3 5 3 0 4 5 4 6 4 0 5 6 5 7 5 0 6 7 6 8 6 0 0 8 0 9 0 0 0 9 0 10 0 0 7 10 7 11 7 0 8 11 8 12 8 0 4 12 4 13 4 0 3 13 3 14 3 0 9 14 9 15 9 0 10 15 10 16 10 0 0 16 0 17 0 1 11 18 11 2 11 18 11 19 11 2 11 2 12 19 12 3 12 19 12 20 12 3 12 3 13 20 13 4 13 20 13 21 13 4 13 4 14 21 14 5 14 21 14 22 14 5 14 5 15 22 15 6 15 22 15 23 15 6 15 6 16 23 16 7 16 23 16 24 16 7 16 7 17 24 17 8 17 24 18 25 18 8 18 8 19 25 19 9 19 25 19 26 19 9 19 9 20 26 20 10 20 26 20 27 20 10 20 10 21 27 21 11 21 27 21 28 21 11 21 11 22 28 22 12 22 28 22 29 22 12 22 12 23 29 23 13 23 29 23 30 23 13 23 13 24 30 24 14 24 30 24 31 24 14 24 14 25 31 25 15 25 31 25 32 25 15 25 15 26 32 26 16 26 32 27 33 27 16 27 16 28 33 28 17 28 33 28 34 28 17 28</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3784-mesh" name="Building3784">
+      <mesh>
+        <source id="Building3784-mesh-positions">
+          <float_array id="Building3784-mesh-positions-array" count="54">12.63177 5 8.282532 12.63177 -7.5 8.282532 12.32678 5 1.147552 12.32678 -7.5 1.147552 9.366761 5 1.280548 9.366761 -7.5 1.280548 9.147767 5 -3.929443 9.147767 -7.5 -3.929443 5.967773 5 -3.795471 5.967773 -7.5 -3.795471 5.815765 5 -7.369446 5.815765 -7.5 -7.369446 -24.31223 5 -6.08847 -24.31223 -7.5 -6.08847 -23.62622 5 9.81955 -23.62622 -7.5 9.81955 4.025757 10 -0.4290161 -18.66327 10 1.734161</float_array>
+          <technique_common>
+            <accessor source="#Building3784-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3784-mesh-normals">
+          <float_array id="Building3784-mesh-normals-array" count="69">0.9990877 0 -0.04270708 0.9990877 0 -0.04270708 -0.04488533 0 -0.9989922 -0.04488533 0 -0.9989922 0.9991179 0 -0.04199635 -0.04209232 0 -0.9991138 -0.04209232 0 -0.9991137 0.9990968 0 -0.04249352 0.9990968 0 -0.04249346 -0.04247939 0 -0.9990974 -0.9990715 0 0.04308313 -0.9990715 0 0.04308313 0.04235309 0 0.9991027 0.05227023 0.8346797 0.5482499 0.02044987 0.8757066 0.4824103 0 1 0 0.6995757 0.6357516 -0.3262111 -0.03518968 0.5487123 -0.8352705 0.6880499 0.7250869 -0.02892112 -0.6851257 0.7278256 0.02954477 0.9222444 0.3846125 -0.0392248 -0.05655127 0.8031014 -0.5931527 -0.0224021 0.8496396 -0.5268878</float_array>
+          <technique_common>
+            <accessor source="#Building3784-mesh-normals-array" count="23" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3784-mesh-vertices">
+          <input semantic="POSITION" source="#Building3784-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="16">
+          <input semantic="VERTEX" source="#Building3784-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3784-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 1 3 1 2 1 2 2 3 2 4 2 3 3 5 3 4 3 4 4 5 4 6 4 5 4 7 4 6 4 6 5 7 5 8 5 7 6 9 6 8 6 8 7 9 7 10 7 9 8 11 8 10 8 10 9 11 9 12 9 11 9 13 9 12 9 12 10 13 10 14 10 13 11 15 11 14 11 14 12 15 12 0 12 15 12 1 12 0 12</p>
+        </polylist>
+        <polylist material="ROOF_DEFAULT_0-material" count="10">
+          <input semantic="VERTEX" source="#Building3784-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3784-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>16 13 17 13 14 13 14 14 0 14 16 14 2 15 4 15 0 15 4 16 16 16 0 16 6 17 8 17 16 17 4 18 6 18 16 18 12 19 14 19 17 19 10 20 16 20 8 20 17 21 16 21 10 21 12 22 17 22 10 22</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Building3520-mesh" name="Building3520">
+      <mesh>
+        <source id="Building3520-mesh-positions">
+          <float_array id="Building3520-mesh-positions-array" count="108">11.57993 9.027778 -12.50562 11.57993 -5.972222 -12.50562 -11.00909 9.027778 -1.673614 -11.00909 -5.972222 -1.673614 -7.572082 9.027778 5.484375 -7.572082 -5.972222 5.484375 15.0159 9.027778 -5.347626 15.0159 -5.972222 -5.347626 18.09992 -0.9722223 -4.400635 18.09992 -5.972222 -4.400635 22.35492 -0.9722223 -6.515625 22.35492 -5.972222 -6.515625 18.97592 -0.9722223 -18.57263 18.97592 -5.972222 -18.57263 13.98791 -0.9722223 -16.20163 13.98791 -5.972222 -16.20163 17.35791 -0.9722223 -8.998627 17.35791 -5.972222 -8.998627 16.16791 -0.9722223 -8.419617 16.16791 -5.972222 -8.419617 -23.69809 6.527778 15.71536 -23.69809 -5.972222 15.71536 -35.41608 6.527778 6.263367 -35.41608 -5.972222 6.263367 -40.82208 6.527778 41.52038 -40.82208 -5.972222 41.52038 -28.01007 6.527778 43.51239 -28.01007 -5.972222 43.51239 18.09992 6.527778 -4.400635 16.16791 6.527778 -8.419617 17.35791 6.527778 -8.998627 13.98791 6.527778 -16.20163 -9.676087 6.527778 -4.946625 -9.676087 -5.972222 -4.946625 -10.1431 6.527778 -5.903625 -10.1431 -5.972222 -5.903625</float_array>
+          <technique_common>
+            <accessor source="#Building3520-mesh-positions-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Building3520-mesh-normals">
+          <float_array id="Building3520-mesh-normals-array" count="105">-0.432383 0 -0.9016901 -0.9014652 0 0.4328515 0.4323991 0 0.9016823 0.9015163 0 -0.4327453 0 1 0 0.4451058 0 0.8954781 0.9629011 0 -0.2698547 -0.4293078 0 -0.9031583 -0.9057686 0 0.4237727 -0.4375206 0 -0.8992084 -0.4375206 0 -0.8992084 -0.9012696 0 0.4332587 -0.9012696 0 0.4332587 0 1 0 0 1 0 0.6278332 0 -0.778348 0.6278333 0 -0.778348 -0.9884482 0 -0.1515601 -0.9884481 0 -0.15156 -0.1536334 0 0.988128 -0.1536341 0 0.9881278 0.9881812 0 0.1532904 0.9881812 0 0.1532904 0 1 0 0.9012696 0 -0.4332587 0.4375206 0 0.8992084 0.9057687 0 -0.4237727 -0.4295115 0 -0.9030614 0.8987016 0 -0.4385609 -0.4337728 0 -0.9010223 -0.4337728 0 -0.9010223 -0.6278333 0 0.778348 -0.6278332 0 0.778348 0.4336587 0 0.9010772 0 1 1.46234e-7</float_array>
+          <technique_common>
+            <accessor source="#Building3520-mesh-normals-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Building3520-mesh-vertices">
+          <input semantic="POSITION" source="#Building3520-mesh-positions"/>
+        </vertices>
+        <polylist material="BUILDING_DEFAULT_0-material" count="44">
+          <input semantic="VERTEX" source="#Building3520-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3520-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 1 0 2 0 1 0 3 0 2 0 2 1 3 1 4 1 3 1 5 1 4 1 4 2 5 2 6 2 5 2 7 2 6 2 6 3 7 3 0 3 7 3 1 3 0 3 8 5 9 5 10 5 9 5 11 5 10 5 10 6 11 6 12 6 11 6 13 6 12 6 12 7 13 7 14 7 13 7 15 7 14 7 14 8 15 8 16 8 15 8 17 8 16 8 16 9 17 9 18 9 17 10 19 10 18 10 18 11 19 11 8 11 19 12 9 12 8 12 20 15 21 15 22 15 21 16 23 16 22 16 22 17 23 17 24 17 23 18 25 18 24 18 24 19 25 19 26 19 25 20 27 20 26 20 26 21 27 21 20 21 27 22 21 22 20 22 28 24 9 24 29 24 9 24 19 24 29 24 29 25 19 25 30 25 19 25 17 25 30 25 30 26 17 26 31 26 17 26 15 26 31 26 31 27 15 27 32 27 15 27 33 27 32 27 32 28 33 28 34 28 33 28 35 28 34 28 34 29 35 29 22 29 35 30 23 30 22 30 22 31 23 31 20 31 23 32 21 32 20 32 20 33 21 33 28 33 21 33 9 33 28 33</p>
+        </polylist>
+        <polylist material="CONCRETE_0-material" count="14">
+          <input semantic="VERTEX" source="#Building3520-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Building3520-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 4 4 4 6 4 2 4 4 4 0 4 16 4 18 4 8 4 10 13 16 13 8 13 12 4 16 4 10 4 14 14 16 14 12 14 24 23 26 23 20 23 22 4 24 4 20 4 32 4 20 4 28 4 22 4 20 4 32 4 34 4 22 4 32 4 29 4 32 4 28 4 31 34 32 34 29 34 31 4 29 4 30 4</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="model_gridID_98_w383801402_001" name="model_gridID_98_w383801402_001" type="NODE">
+        <matrix sid="transform">1 0 0 332.766 0 -1.62921e-7 -1 486.3186 0 1 -1.62921e-7 5.142936 0 0 0 1</matrix>
+        <instance_geometry url="#Flagpole398-mesh" name="model_gridID_98_w383801402_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MAT_3_0-material" target="#MAT_3_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w383801402_002" name="model_gridID_98_w383801402_002" type="NODE">
+        <matrix sid="transform">1 0 0 327.578 0 -1.62921e-7 -1 486.1186 0 1 -1.62921e-7 5.142936 0 0 0 1</matrix>
+        <instance_geometry url="#Flagpole399-mesh" name="model_gridID_98_w383801402_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MAT_3_0-material" target="#MAT_3_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w383801402_003" name="model_gridID_98_w383801402_003" type="NODE">
+        <matrix sid="transform">1 0 0 328.882 0 -1.62921e-7 -1 486.1636 0 1 -1.62921e-7 5.142936 0 0 0 1</matrix>
+        <instance_geometry url="#Flagpole400-mesh" name="model_gridID_98_w383801402_003">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MAT_3_0-material" target="#MAT_3_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w383801402_004" name="model_gridID_98_w383801402_004" type="NODE">
+        <matrix sid="transform">1 0 0 330.1769 0 -1.62921e-7 -1 486.2185 0 1 -1.62921e-7 5.142936 0 0 0 1</matrix>
+        <instance_geometry url="#Flagpole401-mesh" name="model_gridID_98_w383801402_004">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MAT_3_0-material" target="#MAT_3_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w383801402_005" name="model_gridID_98_w383801402_005" type="NODE">
+        <matrix sid="transform">1 0 0 331.471 0 -1.62921e-7 -1 486.2746 0 1 -1.62921e-7 5.142936 0 0 0 1</matrix>
+        <instance_geometry url="#Flagpole397-mesh" name="model_gridID_98_w383801402_005">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="MAT_3_0-material" target="#MAT_3_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w383801402_006" name="model_gridID_98_w383801402_006" type="NODE">
+        <matrix sid="transform">1 0 0 323.6182 0 -1.62921e-7 -1 349.1375 0 1 -1.62921e-7 7.500056 0 0 0 1</matrix>
+        <instance_geometry url="#Building3784-mesh" name="model_gridID_98_w383801402_006">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="ROOF_DEFAULT_0-material" target="#ROOF_DEFAULT_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="model_gridID_98_w389190298" name="model_gridID_98_w389190298" type="NODE">
+        <matrix sid="transform">1 0 0 293.4001 0 -1.62921e-7 -1 390.1784 0 1 -1.62921e-7 5.972286 0 0 0 1</matrix>
+        <instance_geometry url="#Building3520-mesh" name="model_gridID_98_w389190298">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="BUILDING_DEFAULT_0-material" target="#BUILDING_DEFAULT_0-material"/>
+              <instance_material symbol="CONCRETE_0-material" target="#CONCRETE_0-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
